@@ -1,0 +1,100 @@
+#+TITLE:     深井貴明(Takaaki FUKAI)
+#+AUTHOR:    深井貴明
+#+EMAIL:     fukai@osss.cs.tsukuba.ac.jp
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  jp
+#+OPTIONS:   H:1 num:nil toc:t \n:n @:t ::t |:t ^:t -:t f:t *:t <:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+English version is [[./profile_en.html][here]]
+* 更新履歴
+  - 2015/12/11 英語版のページを追加 & 業績，研究分野を更新 &  受賞歴を追加
+  - 2015/05/09 所属，学歴，業績を更新
+  - 2014/03/12 ページ公開
+
+* 所属
+  筑波大学大学院システム情報工学研究科コンピュータサイエンス専攻博士後期1年(D1)
+
+* 連絡先
+  - メールアドレス :: fukai(at)osss.cs.tsukuba.ac.jp
+  - 研究室住所 :: 茨城県つくば市天王台1-1-1 総合研究棟B 1128号室
+
+* 研究分野
+  - 仮想化技術
+    - BitVisor
+    - ライブマイグレーション
+  - クラウドコンピューティング
+    - IaaS クラウド
+      - ベアメタルクラウド
+  - オペレーティングシステム
+    - Linux
+    - デバイスドライバ
+
+* 学歴
+  - 2009年3月 徳島県立穴吹高等学校 卒業
+  - 2009年4月 岡山大学工学部情報工学科 入学
+  - 2013年3月 岡山大学工学部情報工学科 卒業
+  - 2013年4月 筑波大学大学院博士前期課程システム情報工学研究科コンピュータサイエンス専攻 入学
+  - 2015年3月 筑波大学大学院博士前期課程システム情報工学研究科コンピュータサイエンス専攻 卒業
+  - 2015年4月 筑波大学大学院博士後期課程システム情報工学研究科コンピュータサイエンス専攻 入学
+* COMMENT 職歴
+* COMMENT 研究テーマ
+  物理マシン間のライブマイグレーション
+* 業績
+** 国際会議
+   - *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
+     _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, Kazuhiko Kato.
+     In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing, 
+     December 2015. 
+     *[Best paper award]*.
+   
+** 国内研究会
+  - *ベアメタルクラウドにおけるハードウェア保護*
+    東 耕平, 竹腰 開, _深井 貴明_, 品川 高廣, 加藤 和彦
+    第136回 システムソフトウェアとオペレーティング・システム研究会．
+    2016年2月
+  - *物理マシン間のライブマイグレーション手法の提案*
+    _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
+    第127回 システムソフトウェアとオペレーティング・システム研究会．
+    2013年12月
+   [[./files/OS127-fukai.pdf][PDF]] [[./ipsjnotice.html][ここに掲載した著作物の利用に関する注意]]
+** 国外ポスタ発表
+   - *Live Migration of Bare-metal Instances*
+     _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+     5th Asia-Pacific Workshop on Systems (APSys 2014).
+     June, 2014
+** 国内ポスタ発表
+  - *物理マシン間のライブマイグレーション手法の提案*
+    _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
+    第25回コンピュータシステム・シンポジウム．(ComSys2013)
+    2013年12月
+  - *物理マシン間のライブマイグレーション手法の提案*
+    _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
+    第11回 ディペンダブルシステムワークショップ．(DSW 2013)
+    2013年12月    
+** 学位論文
+   - *Mintオペレーティングにおける柔軟な起動順序の実現*
+     岡山大学工学部情報工学科 卒業研究報告書
+     2013年3月
+   - *物理マシン間のOSライブマイグレーションに関する研究*
+     筑波大学大学院システム情報工学研究科コンピュータサイエンス専攻 修士論文
+     2015年 3月
+* 受賞歴
+  - Best Paper Award 
+    The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015
+
+  - *岡山大学工学部優秀学生賞* (2012年)
+* COMMENT その他
+** 好きなエディタ
+   Emacs
+** 水泳歴
+   小学校1年から高校3年まで
+   国体，インターハイ出場あり
+
