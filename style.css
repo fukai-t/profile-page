@@ -12,3 +12,8 @@ body{
     font-family: "ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
     /* font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro"; */
 }
+
+li{
+    margin-bottom:0.5em;
+}
+
