@@ -9,12 +9,15 @@
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:   
-#+LINK_HOME: 
+#+LINK_UP:
+#+LINK_HOME:
 #+XSLT:
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
-Japanese version is [[./index.html][here]]
+
+Japanese version is [[./profile_jp.html][here]]
 * Update History
+  - 2019/08/12 Update Affiliation, Contact, Degree, Publications, Award, and Other Activity sections
+  - 2019/08/11 Move from http://www.osss.cs.tsukuba.ac.jp/~fukai to https://fukai-t.github.io/profile-page/
   - 2018/02/14 Update Affiliation, Research Interests, and Publications
   - 2016/03/14 Update Publications & Add other activity
   - 2015/12/11 Add English version page & Update Research Interests, Publications & Add Award
@@ -22,16 +25,20 @@ Japanese version is [[./index.html][here]]
   - 2014/03/12 Open this page
 
 * Affiliation
-  Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba
-  PhD Student(D3)
+  Information Technology Center, The University of Tokyo
+  (Visited Researcher)
+  # Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba
+  # PhD Student(D3)
 
-* E-mail
-  fukai(at)osss.cs.tsukuba.ac.jp
-* Address
-  #923 Laboratory of Advanced Research B,
-  University of Tsukuba,
-  1-1-1 Tennodai, Tsukuba, Ibaraki, 305-8573, Japan
-		  
+* Contact
+  - E-mail ::
+	      fukai(at)os.ecc.u-tokyo.ac.jp
+	      # fukai(at)osss.cs.tsukuba.ac.jp
+  - Address ::
+	      #502 Information Technology Center,
+	      The University of Tokyo,
+	      2-11-16 Yayoi, Bunkyo-ku, Tokyo, 113-8658, Japan
+
 * Research Interests
   - OS Kernel, Virtualization Software
     - BitVisor
@@ -44,32 +51,50 @@ Japanese version is [[./index.html][here]]
       - Hardware Protection
 
 * Degrees
+  - September 2018, Doctor of Philosophy in Engineering, University of Tsukuba
   - March 2015, Master of Engineering, University of Tsukuba
   - March 2013, Bachelor of Engineering, Okayama University
-* COMMENT 職歴
-* COMMENT 研究テーマ
-  物理マシン間のライブマイグレーション
 * Publications
+** Journal Paper
+   1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.
+      *Live Migration in Bare-metal Clouds.*
+      IEEE Transactions on Cloud Computing,
+      Jul 2018.
+      (Open Access: https://ieeexplore.ieee.org/document/8401692)
+
 ** International Conference Papers (Refereed)
-   1. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato. 
+   1. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.
+      *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*
+      In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018),
+      Dec 2018. (Acceptance Ratio: 19.8%) *[Best paper award]*.
+   2. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.
       *Unified Hardware Abstraction Layer with Device Masquerade.*
-      In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018), 
-      Apr 2018 (To appear).
-   2. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
+      In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018),
+      Apr 2018.
+   3. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.
+      *Live Migration on ARM-based Micro-datacentres.*
+      In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),
+      Jan 2018.
+   4. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
       *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.*
       In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),
-      Dec 2017. 
-   3. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, Kazuhiko Kato.
+      Dec 2017.
+   5. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, Kazuhiko Kato.
       *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
-      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing, 
-      December 2015. 
+      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing,
+      December 2015.
       *[Best paper award]*.
 ** Domestic Workshop Papers (Non-Refereed)
-  1. 東 耕平, 竹腰 開, _深井 貴明_, 品川 高廣, 加藤 和彦
+   (Sorry for information in Japanese, but there is no official information in English)
+  1. 荻野 将拓, 味曽野 雅史, _深井 貴明_, 品川 高廣．
+     *ハードウェア障害に対するハイパーバイザの対故障性検証．*
+     第143回 システムソフトウェアとオペレーティング・システム研究会．
+     2018年5月
+  2. 東 耕平, 竹腰 開, _深井 貴明_, 品川 高廣, 加藤 和彦
      *ベアメタルクラウドにおけるハードウェア保護*
      第136回 システムソフトウェアとオペレーティング・システム研究会．
      2016年2月
-  2. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
+  3. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
      *物理マシン間のライブマイグレーション手法の提案*
      第127回 システムソフトウェアとオペレーティング・システム研究会．
      2013年12月
@@ -80,6 +105,7 @@ Japanese version is [[./index.html][here]]
      5th Asia-Pacific Workshop on Systems (APSys 2014).
      June, 2014
 ** Domestic Workshop Posters (Non-Refereed)
+   (Sorry for information in Japanese, but there is no official information in English)
   1. 安岡 亮輔， _深井 貴明_ ，品川 高廣， 加藤 和彦
     *ネステッド仮想化の動的 ON/OFF による仮想マシンモニタ若化*
     第28回コンピュータシステム・シンポジウム．(ComSys2016)
@@ -87,34 +113,32 @@ Japanese version is [[./index.html][here]]
   2. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
      *物理マシン間のライブマイグレーション手法の提案*
      第11回 ディペンダブルシステムワークショップ．(DSW 2013)
-     2013年12月    
+     2013年12月
   3. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
      *物理マシン間のライブマイグレーション手法の提案*
      第25回コンピュータシステム・シンポジウム．(ComSys2013)
      2013年12月
 ** COMMENT 学位論文
+   - *ベアメタルクラウドにおける物理マシン管理に関する研究*
+     筑波大学 システム情報工学研究科 博士論文
+   - *物理マシン間のOSライブマイグレーションに関する研究*
+     筑波大学 システム情報工学研究科 修士論文
+     2015年 3月
    - *Mintオペレーティングにおける柔軟な起動順序の実現*
      岡山大学工学部情報工学科 卒業研究報告書
      2013年3月
-   - *物理マシン間のOSライブマイグレーションに関する研究*
-     筑波大学大学院システム情報工学研究科コンピュータサイエンス専攻 修士論文
-     2015年 3月
 * Award
   - *Best Paper Award*
+    The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018
+
+  - *Best Paper Award*
     The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015
-    
+
   - *岡山大学工学部優秀学生賞*
     Faculty of Engineering, Okayama University, March 2013
 * Other Activity
-  - Slideshare: http://www.slideshare.net/DeepTokikane/presentations
-  - Github: https://github.com/fukai-t
-  - Bitbucket: https://bitbucket.org/ftakaaki/
-
-
-* COMMENT その他
-** 好きなエディタ
-   Emacs
-** 水泳歴
-   小学校1年から高校3年まで
-   国体，インターハイ出場あり
-
+  - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
+  - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
+  - Slideshare :: http://www.slideshare.net/DeepTokikane/presentations
+  - Github :: https://github.com/fukai-t
+  - Bitbucket :: https://bitbucket.org/ftakaaki/
