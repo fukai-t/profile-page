@@ -15,29 +15,16 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 
 Japanese version is [[./profile_jp.html][here]]
-* Update History
-  - 2019/08/12 Update Affiliation, Contact, Degree, Publications, Award, and Other Activity sections
-  - 2019/08/11 Move from http://www.osss.cs.tsukuba.ac.jp/~fukai to https://fukai-t.github.io/profile-page/
-  - 2018/02/14 Update Affiliation, Research Interests, and Publications
-  - 2016/03/14 Update Publications & Add other activity
-  - 2015/12/11 Add English version page & Update Research Interests, Publications & Add Award
-  - 2015/05/09 Add Affiliation, Degrees, and Publications
-  - 2014/03/12 Open this page
-
 * Affiliation
-  Information Technology Center, The University of Tokyo
-  (Visited Researcher)
-  # Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba
-  # PhD Student(D3)
+  - Postdoctoral Researcher at RIKEN
+  - Visited Researcher at Information Technology Center, The University of Tokyo
 
 * Contact
   - E-mail ::
-	      fukai(at)os.ecc.u-tokyo.ac.jp
-	      # fukai(at)osss.cs.tsukuba.ac.jp
+	      takaaki.fukai (at) riken.jp
   - Address ::
-	      #502 Information Technology Center,
-	      The University of Tokyo,
-	      2-11-16 Yayoi, Bunkyo-ku, Tokyo, 113-8658, Japan
+	       RIKEN Center for Computational Science (RIKEN R-CCS)
+	       7-1-26 Minatojima-minami-machi, Chuo-ku, Kobe, Hyogo 650-0047, Japan
 
 * Research Interests
   - OS Kernel, Virtualization Software
@@ -118,16 +105,18 @@ Japanese version is [[./profile_jp.html][here]]
      *物理マシン間のライブマイグレーション手法の提案*
      第25回コンピュータシステム・シンポジウム．(ComSys2013)
      2013年12月
-** COMMENT 学位論文
-   - *ベアメタルクラウドにおける物理マシン管理に関する研究*
-     筑波大学 システム情報工学研究科 博士論文
-   - *物理マシン間のOSライブマイグレーションに関する研究*
-     筑波大学 システム情報工学研究科 修士論文
-     2015年 3月
-   - *Mintオペレーティングにおける柔軟な起動順序の実現*
-     岡山大学工学部情報工学科 卒業研究報告書
-     2013年3月
+** Other presentations (Domestic)
+   (Sorry for information in Japanese, but there is no official information in English)
+
+   1.  _深井 貴明_
+      トップカンファレンス・ジャーナル採択論文講演
+      (採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)
+      第31回コンピュータシステム・シンポジウム (ComSys2019）
+
 * Award
+  - *IEEE Computer Society Japan Chapter Young Author Award 2019*
+    IEEE Computer Society Tokyo/Japan Joint Chapter, December 2019
+
   - *Best Paper Award*
     The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018
 
@@ -136,9 +125,26 @@ Japanese version is [[./profile_jp.html][here]]
 
   - *岡山大学工学部優秀学生賞*
     Faculty of Engineering, Okayama University, March 2013
+
+* Work Experience
+  - April 2018 -- December 2019: Software Developer at IBM Japan
+    - Worked as QA engineer of a web application and DevOps engineer of a cloud productions
+    - Technical experience: Software test, CI/CD, Jenkins, Docker, Kubernetes, Helm
+
+
 * Other Activity
   - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
   - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
   - Slideshare :: http://www.slideshare.net/DeepTokikane/presentations
   - Github :: https://github.com/fukai-t
   - Bitbucket :: https://bitbucket.org/ftakaaki/
+* Update History
+  - 2020/03/10 Add /Work Experience/ and update /Affiliation/, /Contact/, /Publications/, and /Award/
+  - 2019/08/12 Update Affiliation, Contact, Degree, Publications, Award, and Other Activity sections
+  - 2019/08/11 Move from http://www.osss.cs.tsukuba.ac.jp/~fukai to https://fukai-t.github.io/profile-page/
+  - 2018/02/14 Update Affiliation, Research Interests, and Publications
+  - 2016/03/14 Update Publications & Add other activity
+  - 2015/12/11 Add English version page & Update Research Interests, Publications & Add Award
+  - 2015/05/09 Add Affiliation, Degrees, and Publications
+  - 2014/03/12 Open this page
+

@@ -14,22 +14,13 @@
 #+XSLT:
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 English version is [[./profile_en.html][here]]
-* 更新履歴
-  - 2019/08/12 所属, 連絡先, 学歴, 業績, 受賞歴, その他活動を更新
-  - 2019/08/11 本ページを http://www.osss.cs.tsukuba.ac.jp/~fukai から https://fukai-t.github.io/profile-page/ へ移動
-  - 2018/02/14 所属(学年)，研究分野，業績を更新
-  - 2017/01/14 連絡先，業績一覧を更新，その他学外活動を追加
-  - 2016/03/14 業績一覧を更新
-  - 2015/12/11 英語版のページを追加 & 業績，研究分野を更新 &  受賞歴を追加
-  - 2015/05/09 所属，学歴，業績を更新
-  - 2014/03/12 ページ公開
-
 * 所属
-  東京大学 情報基盤センター (客員研究員)
+  - 理化学研究所 (特別研究員)
+  - 東京大学 情報基盤センター (客員研究員)
 
 * 連絡先
-  - メールアドレス :: fukai(at)os.ecc.u-tokyo.ac.jp
-  - 研究室住所 :: 〒113-8658 東京都文京区代々木 2-11-16 東京大学 情報基盤センター 502号室
+  - メールアドレス :: takaaki.fukai (at) riken.jp
+  - 住所 :: 〒650-0047 兵庫県神戸市中央区港島南町7-1-26
 
 * 研究分野
   - OS カーネル / ハイパバイザ
@@ -51,7 +42,10 @@ English version is [[./profile_en.html][here]]
   - 2013年3月 岡山大学工学部情報工学科 卒業
   - 2009年4月 岡山大学工学部情報工学科 入学
   - 2009年3月 徳島県立穴吹高等学校 卒業
-* COMMENT 職歴
+* 職歴
+  - 2018年4月--2019年12月: 日本アイ・ビー・エム株式会社 製品開発エンジニア
+    - Web アプリケーションのQA, クラウド製品の DevOps 業務に従事
+    - 業務経験: ソフトウェアテスト, CI/CD, Jenkins, Docker, Kubernetes, Helm
 * COMMENT 研究テーマ
   物理マシン間のライブマイグレーション
 * 業績
@@ -129,16 +123,41 @@ English version is [[./profile_en.html][here]]
      *Mintオペレーティングにおける柔軟な起動順序の実現*
      岡山大学工学部情報工学科 卒業研究報告書
      2013年3月
+
+** その他国内発表
+   1.  _深井 貴明_
+      トップカンファレンス・ジャーナル採択論文講演
+      (採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)
+      第31回コンピュータシステム・シンポジウム (ComSys2019）
+
 * 受賞歴
-  1. *Best Paper Award*
-     The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018
+  1. *IEEE Computer Society Japan Chapter Young Author Award 2019*
+     IEEE Computer Society Tokyo/Japan Joint Chapter, 2019年12月
+
   2. *Best Paper Award*
+     The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018
+
+  3. *Best Paper Award*
     The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015
-  3. *岡山大学工学部優秀学生賞*
+
+  4. *岡山大学工学部優秀学生賞*
      岡山大学工学部 2013年3月
+
 * その他学外活動
   - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
   - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
   - Slideshare :: http://www.slideshare.net/DeepTokikane/presentations
   - Github :: https://github.com/fukai-t
   - Bitbucket :: https://bitbucket.org/ftakaaki/
+
+* 更新履歴
+  - 2020/03/10 /職歴/ の追加, /所属/, /連絡先/, /業績/, /受賞歴/ の更新
+  - 2019/08/12 所属, 連絡先, 学歴, 業績, 受賞歴, その他活動を更新
+  - 2019/08/11 本ページを http://www.osss.cs.tsukuba.ac.jp/~fukai から https://fukai-t.github.io/profile-page/ へ移動
+  - 2018/02/14 所属(学年)，研究分野，業績を更新
+  - 2017/01/14 連絡先，業績一覧を更新，その他学外活動を追加
+  - 2016/03/14 業績一覧を更新
+  - 2015/12/11 英語版のページを追加 & 業績，研究分野を更新 &  受賞歴を追加
+  - 2015/05/09 所属，学歴，業績を更新
+  - 2014/03/12 ページ公開
+
