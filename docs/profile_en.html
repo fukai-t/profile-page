@@ -3,23 +3,30 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2020-03-10 Tue 22:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Takaaki FUKAI (深井貴明)</title>
-<!-- 2019-08-12 Mon 13:45 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Takaaki FUKAI" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Takaaki FUKAI" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
   .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -46,30 +53,127 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
+  .footpara { display: inline; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -86,6 +190,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -94,7 +199,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -143,257 +248,255 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">Update History</a></li>
-<li><a href="#sec-2">Affiliation</a></li>
-<li><a href="#sec-3">Contact</a></li>
-<li><a href="#sec-4">Research Interests</a></li>
-<li><a href="#sec-5">Degrees</a></li>
-<li><a href="#sec-6">Publications</a></li>
-<li><a href="#sec-7">Award</a></li>
-<li><a href="#sec-8">Other Activity</a></li>
+<li><a href="#org6ebe7ed">Affiliation</a></li>
+<li><a href="#org136d7b9">Contact</a></li>
+<li><a href="#orgc67054c">Research Interests</a></li>
+<li><a href="#orgbaa6caa">Degrees</a></li>
+<li><a href="#orgcb06b36">Publications</a></li>
+<li><a href="#org3864a40">Award</a></li>
+<li><a href="#org2888dc9">Work Experience</a></li>
+<li><a href="#orgc48c24f">Other Activity</a></li>
+<li><a href="#orga8419a3">Update History</a></li>
 </ul>
 </div>
 </div>
 <p>
-Japanese version is <a href="./profile_jp.html">here</a><br  />
+Japanese version is <a href="./profile_jp.html">here</a><br />
 </p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Update History</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org6ebe7ed" class="outline-2">
+<h2 id="org6ebe7ed">Affiliation</h2>
+<div class="outline-text-2" id="text-org6ebe7ed">
 <ul class="org-ul">
-<li>2019/08/12 Update Affiliation, Contact, Degree, Publications, Award, and Other Activity sections<br  />
-</li>
-<li>2019/08/11 Move from <a href="http://www.osss.cs.tsukuba.ac.jp/~fukai">http://www.osss.cs.tsukuba.ac.jp/~fukai</a> to <a href="https://fukai-t.github.io/profile-page/">https://fukai-t.github.io/profile-page/</a><br  />
-</li>
-<li>2018/02/14 Update Affiliation, Research Interests, and Publications<br  />
-</li>
-<li>2016/03/14 Update Publications &amp; Add other activity<br  />
-</li>
-<li>2015/12/11 Add English version page &amp; Update Research Interests, Publications &amp; Add Award<br  />
-</li>
-<li>2015/05/09 Add Affiliation, Degrees, and Publications<br  />
-</li>
-<li>2014/03/12 Open this page<br  />
-</li>
+<li>Postdoctoral Researcher at RIKEN<br /></li>
+<li>Visited Researcher at Information Technology Center, The University of Tokyo<br /></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Affiliation</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Information Technology Center, The University of Tokyo<br  />
-(Visited Researcher)<br  />
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Contact</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org136d7b9" class="outline-2">
+<h2 id="org136d7b9">Contact</h2>
+<div class="outline-text-2" id="text-org136d7b9">
 <dl class="org-dl">
-<dt> E-mail </dt><dd>              fukai(at)os.ecc.u-tokyo.ac.jp<br  />
-</dd>
-<dt> Address </dt><dd>              #502 Information Technology Center,<br  />
-The University of Tokyo,<br  />
-2-11-16 Yayoi, Bunkyo-ku, Tokyo, 113-8658, Japan<br  />
-</dd>
+<dt>E-mail</dt><dd>takaaki.fukai (at) riken.jp<br /></dd>
+<dt>Address</dt><dd>RIKEN Center for Computational Science (RIKEN R-CCS)<br />
+7-1-26 Minatojima-minami-machi, Chuo-ku, Kobe, Hyogo 650-0047, Japan<br /></dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4">Research Interests</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgc67054c" class="outline-2">
+<h2 id="orgc67054c">Research Interests</h2>
+<div class="outline-text-2" id="text-orgc67054c">
 <ul class="org-ul">
-<li>OS Kernel, Virtualization Software<br  />
+<li>OS Kernel, Virtualization Software<br />
 <ul class="org-ul">
-<li>BitVisor<br  />
-</li>
-<li>Linux<br  />
-</li>
-</ul>
-</li>
-<li>Cloud Computing<br  />
+<li>BitVisor<br /></li>
+<li>Linux<br /></li>
+</ul></li>
+<li>Cloud Computing<br />
 <ul class="org-ul">
-<li>IaaS Cloud<br  />
+<li>IaaS Cloud<br />
 <ul class="org-ul">
-<li>Bare-metal Cloud<br  />
-</li>
-</ul>
-</li>
-<li>Physical Machine Management<br  />
+<li>Bare-metal Cloud<br /></li>
+</ul></li>
+<li>Physical Machine Management<br />
 <ul class="org-ul">
-<li>Live Migration<br  />
-</li>
-<li>Hardware Protection<br  />
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>Live Migration<br /></li>
+<li>Hardware Protection<br /></li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">Degrees</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orgbaa6caa" class="outline-2">
+<h2 id="orgbaa6caa">Degrees</h2>
+<div class="outline-text-2" id="text-orgbaa6caa">
 <ul class="org-ul">
-<li>September 2018, Doctor of Philosophy in Engineering, University of Tsukuba<br  />
-</li>
-<li>March 2015, Master of Engineering, University of Tsukuba<br  />
-</li>
-<li>March 2013, Bachelor of Engineering, Okayama University<br  />
-</li>
+<li>September 2018, Doctor of Philosophy in Engineering, University of Tsukuba<br /></li>
+<li>March 2015, Master of Engineering, University of Tsukuba<br /></li>
+<li>March 2013, Bachelor of Engineering, Okayama University<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">Publications</h2>
-<div class="outline-text-2" id="text-6">
-</div><ul class="org-ul"><li><a id="sec-6-1" name="sec-6-1"></a>Journal Paper<br  /><div class="outline-text-3" id="text-6-1">
+<div id="outline-container-orgcb06b36" class="outline-2">
+<h2 id="orgcb06b36">Publications</h2>
+<div class="outline-text-2" id="text-orgcb06b36">
+</div>
+<ul class="org-ul">
+<li><a id="org989f461"></a>Journal Paper<br />
+<div class="outline-text-3" id="text-org989f461">
 <ol class="org-ol">
-<li><span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa, Kazuhiko Kato.<br  />
-<b>Live Migration in Bare-metal Clouds.</b><br  />
-IEEE Transactions on Cloud Computing,<br  />
-Jul 2018.<br  />
-(Open Access: <a href="https://ieeexplore.ieee.org/document/8401692">https://ieeexplore.ieee.org/document/8401692</a>)<br  />
-</li>
+<li><span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa, Kazuhiko Kato.<br />
+<b>Live Migration in Bare-metal Clouds.</b><br />
+IEEE Transactions on Cloud Computing,<br />
+Jul 2018.<br />
+(Open Access: <a href="https://ieeexplore.ieee.org/document/8401692">https://ieeexplore.ieee.org/document/8401692</a>)<br /></li>
 </ol>
 </div>
 </li>
 
-<li><a id="sec-6-2" name="sec-6-2"></a>International Conference Papers (Refereed)<br  /><div class="outline-text-3" id="text-6-2">
+<li><a id="orgacd5238"></a>International Conference Papers (Refereed)<br />
+<div class="outline-text-3" id="text-orgacd5238">
 <ol class="org-ol">
-<li>Masanori Misono, Masahiro Ogino, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br  />
-<b>FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.</b><br  />
-In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018),<br  />
-Dec 2018. (Acceptance Ratio: 19.8%) <b>[Best paper award]</b>.<br  />
-</li>
-<li>Iori Yoneji, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa and Kazuhiko Kato.<br  />
-<b>Unified Hardware Abstraction Layer with Device Masquerade.</b><br  />
-In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018),<br  />
-Apr 2018.<br  />
-</li>
-<li>Ilias Avramidis, Michael Mackay, Posco Tso, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br  />
-<b>Live Migration on ARM-based Micro-datacentres.</b><br  />
-In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),<br  />
-Jan 2018.<br  />
-</li>
-<li><span class="underline">Takaaki Fukai</span>, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.<br  />
-<b>BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.</b><br  />
-In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),<br  />
-Dec 2017.<br  />
-</li>
-<li><span class="underline">Takaaki Fukai</span>, Yushi Omote, Takahiro Shinagawa, Kazuhiko Kato.<br  />
-<b>OS-Independent Live Migration Scheme for Bare-metal Clouds.</b><br  />
-In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing,<br  />
-December 2015.<br  />
-<b>[Best paper award]</b>.<br  />
-</li>
+<li>Masanori Misono, Masahiro Ogino, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.</b><br />
+In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018),<br />
+Dec 2018. (Acceptance Ratio: 19.8%) <b>[Best paper award]</b>.<br /></li>
+<li>Iori Yoneji, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa and Kazuhiko Kato.<br />
+<b>Unified Hardware Abstraction Layer with Device Masquerade.</b><br />
+In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018),<br />
+Apr 2018.<br /></li>
+<li>Ilias Avramidis, Michael Mackay, Posco Tso, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>Live Migration on ARM-based Micro-datacentres.</b><br />
+In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),<br />
+Jan 2018.<br /></li>
+<li><span class="underline">Takaaki Fukai</span>, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.<br />
+<b>BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.</b><br />
+In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),<br />
+Dec 2017.<br /></li>
+<li><span class="underline">Takaaki Fukai</span>, Yushi Omote, Takahiro Shinagawa, Kazuhiko Kato.<br />
+<b>OS-Independent Live Migration Scheme for Bare-metal Clouds.</b><br />
+In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing,<br />
+December 2015.<br />
+<b>[Best paper award]</b>.<br /></li>
 </ol>
 </div>
 </li>
-<li><a id="sec-6-3" name="sec-6-3"></a>Domestic Workshop Papers (Non-Refereed)<br  /><div class="outline-text-3" id="text-6-3">
+<li><a id="org4d942e8"></a>Domestic Workshop Papers (Non-Refereed)<br />
+<div class="outline-text-3" id="text-org4d942e8">
 <p>
-(Sorry for information in Japanese, but there is no official information in English)<br  />
+(Sorry for information in Japanese, but there is no official information in English)<br />
 </p>
 <ol class="org-ol">
-<li>荻野 将拓, 味曽野 雅史, <span class="underline">深井 貴明</span>, 品川 高廣．<br  />
-<b>ハードウェア障害に対するハイパーバイザの対故障性検証．</b><br  />
-第143回 システムソフトウェアとオペレーティング・システム研究会．<br  />
-2018年5月<br  />
-</li>
-<li>東 耕平, 竹腰 開, <span class="underline">深井 貴明</span>, 品川 高廣, 加藤 和彦<br  />
-<b>ベアメタルクラウドにおけるハードウェア保護</b><br  />
-第136回 システムソフトウェアとオペレーティング・システム研究会．<br  />
-2016年2月<br  />
-</li>
-<li><span class="underline">深井 貴明</span> ，表 祐志，品川 高廣，加藤 和彦．<br  />
-  <b>物理マシン間のライブマイグレーション手法の提案</b><br  />
-  第127回 システムソフトウェアとオペレーティング・システム研究会．<br  />
-  2013年12月<br  />
-<a href="./files/OS127-fukai.pdf">PDF</a> <a href="./ipsjnotice.html">ここに掲載した著作物の利用に関する注意</a><br  />
-</li>
+<li>荻野 将拓, 味曽野 雅史, <span class="underline">深井 貴明</span>, 品川 高廣．<br />
+<b>ハードウェア障害に対するハイパーバイザの対故障性検証．</b><br />
+第143回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2018年5月<br /></li>
+<li>東 耕平, 竹腰 開, <span class="underline">深井 貴明</span>, 品川 高廣, 加藤 和彦<br />
+<b>ベアメタルクラウドにおけるハードウェア保護</b><br />
+第136回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2016年2月<br /></li>
+<li><span class="underline">深井 貴明</span> ，表 祐志，品川 高廣，加藤 和彦．<br />
+  <b>物理マシン間のライブマイグレーション手法の提案</b><br />
+  第127回 システムソフトウェアとオペレーティング・システム研究会．<br />
+  2013年12月<br />
+<a href="./files/OS127-fukai.pdf">PDF</a> <a href="./ipsjnotice.html">ここに掲載した著作物の利用に関する注意</a><br /></li>
 </ol>
 </div>
 </li>
-<li><a id="sec-6-4" name="sec-6-4"></a>International Workshop Posters (Refereed)<br  /><div class="outline-text-3" id="text-6-4">
+<li><a id="org2ea4b49"></a>International Workshop Posters (Refereed)<br />
+<div class="outline-text-3" id="text-org2ea4b49">
 <ol class="org-ol">
-<li><span class="underline">Takaaki Fukai</span>, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.<br  />
-<b>Live Migration of Bare-metal Instances</b><br  />
-5th Asia-Pacific Workshop on Systems (APSys 2014).<br  />
-June, 2014<br  />
-</li>
+<li><span class="underline">Takaaki Fukai</span>, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.<br />
+<b>Live Migration of Bare-metal Instances</b><br />
+5th Asia-Pacific Workshop on Systems (APSys 2014).<br />
+June, 2014<br /></li>
 </ol>
 </div>
 </li>
-<li><a id="sec-6-5" name="sec-6-5"></a>Domestic Workshop Posters (Non-Refereed)<br  /><div class="outline-text-3" id="text-6-5">
+<li><a id="org5490cc0"></a>Domestic Workshop Posters (Non-Refereed)<br />
+<div class="outline-text-3" id="text-org5490cc0">
 <p>
-(Sorry for information in Japanese, but there is no official information in English)<br  />
+(Sorry for information in Japanese, but there is no official information in English)<br />
 </p>
 <ol class="org-ol">
-<li>安岡 亮輔， <span class="underline">深井 貴明</span> ，品川 高廣， 加藤 和彦<br  />
-<b>ネステッド仮想化の動的 ON/OFF による仮想マシンモニタ若化</b><br  />
-第28回コンピュータシステム・シンポジウム．(ComSys2016)<br  />
-2016年11月<br  />
-</li>
-<li><span class="underline">深井 貴明</span> ，表 祐志，品川 高廣，加藤 和彦．<br  />
-<b>物理マシン間のライブマイグレーション手法の提案</b><br  />
-第11回 ディペンダブルシステムワークショップ．(DSW 2013)<br  />
-2013年12月<br  />
-</li>
-<li><span class="underline">深井 貴明</span> ，表 祐志，品川 高廣，加藤 和彦．<br  />
-<b>物理マシン間のライブマイグレーション手法の提案</b><br  />
-第25回コンピュータシステム・シンポジウム．(ComSys2013)<br  />
-2013年12月<br  />
-</li>
+<li>安岡 亮輔， <span class="underline">深井 貴明</span> ，品川 高廣， 加藤 和彦<br />
+<b>ネステッド仮想化の動的 ON/OFF による仮想マシンモニタ若化</b><br />
+第28回コンピュータシステム・シンポジウム．(ComSys2016)<br />
+2016年11月<br /></li>
+<li><span class="underline">深井 貴明</span> ，表 祐志，品川 高廣，加藤 和彦．<br />
+<b>物理マシン間のライブマイグレーション手法の提案</b><br />
+第11回 ディペンダブルシステムワークショップ．(DSW 2013)<br />
+2013年12月<br /></li>
+<li><span class="underline">深井 貴明</span> ，表 祐志，品川 高廣，加藤 和彦．<br />
+<b>物理マシン間のライブマイグレーション手法の提案</b><br />
+第25回コンピュータシステム・シンポジウム．(ComSys2013)<br />
+2013年12月<br /></li>
 </ol>
 </div>
-</li></ul>
+</li>
+<li><a id="org0b67008"></a>Other presentations (Domestic)<br />
+<div class="outline-text-3" id="text-org0b67008">
+<p>
+(Sorry for information in Japanese, but there is no official information in English)<br />
+</p>
+
+<ol class="org-ol">
+<li><span class="underline">深井 貴明</span><br />
+トップカンファレンス・ジャーナル採択論文講演<br />
+(採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)<br />
+第31回コンピュータシステム・シンポジウム (ComSys2019）<br /></li>
+</ol>
 </div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7">Award</h2>
-<div class="outline-text-2" id="text-7">
-<ul class="org-ul">
-<li><b>Best Paper Award</b><br  />
-    The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018<br  />
-</li>
-
-<li><b>Best Paper Award</b><br  />
-    The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015<br  />
-</li>
-
-<li><b>岡山大学工学部優秀学生賞</b><br  />
-    Faculty of Engineering, Okayama University, March 2013<br  />
 </li>
 </ul>
 </div>
+
+<div id="outline-container-org3864a40" class="outline-2">
+<h2 id="org3864a40">Award</h2>
+<div class="outline-text-2" id="text-org3864a40">
+<ul class="org-ul">
+<li><b>IEEE Computer Society Japan Chapter Young Author Award 2019</b><br />
+IEEE Computer Society Tokyo/Japan Joint Chapter, December 2019<br /></li>
+
+<li><b>Best Paper Award</b><br />
+The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018<br /></li>
+
+<li><b>Best Paper Award</b><br />
+The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015<br /></li>
+
+<li><b>岡山大学工学部優秀学生賞</b><br />
+Faculty of Engineering, Okayama University, March 2013<br /></li>
+</ul>
 </div>
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8">Other Activity</h2>
-<div class="outline-text-2" id="text-8">
+</div>
+
+<div id="outline-container-org2888dc9" class="outline-2">
+<h2 id="org2888dc9">Work Experience</h2>
+<div class="outline-text-2" id="text-org2888dc9">
+<ul class="org-ul">
+<li>April 2018 &#x2013; December 2019: Software Developer at IBM Japan<br />
+<ul class="org-ul">
+<li>Worked as QA engineer of a web application and DevOps engineer of a cloud productions<br /></li>
+<li>Technical experience: Software test, CI/CD, Jenkins, Docker, Kubernetes, Helm<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc48c24f" class="outline-2">
+<h2 id="orgc48c24f">Other Activity</h2>
+<div class="outline-text-2" id="text-orgc48c24f">
 <dl class="org-dl">
-<dt> ResearchGate </dt><dd><a href="https://www.researchgate.net/profile/Takaaki_Fukai">https://www.researchgate.net/profile/Takaaki_Fukai</a><br  />
-</dd>
-<dt> Linkedin </dt><dd><a href="https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp">https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp</a><br  />
-</dd>
-<dt> Slideshare </dt><dd><a href="http://www.slideshare.net/DeepTokikane/presentations">http://www.slideshare.net/DeepTokikane/presentations</a><br  />
-</dd>
-<dt> Github </dt><dd><a href="https://github.com/fukai-t">https://github.com/fukai-t</a><br  />
-</dd>
-<dt> Bitbucket </dt><dd><a href="https://bitbucket.org/ftakaaki/">https://bitbucket.org/ftakaaki/</a><br  />
-</dd>
+<dt>ResearchGate</dt><dd><a href="https://www.researchgate.net/profile/Takaaki_Fukai">https://www.researchgate.net/profile/Takaaki_Fukai</a><br /></dd>
+<dt>Linkedin</dt><dd><a href="https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp">https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp</a><br /></dd>
+<dt>Slideshare</dt><dd><a href="http://www.slideshare.net/DeepTokikane/presentations">http://www.slideshare.net/DeepTokikane/presentations</a><br /></dd>
+<dt>Github</dt><dd><a href="https://github.com/fukai-t">https://github.com/fukai-t</a><br /></dd>
+<dt>Bitbucket</dt><dd><a href="https://bitbucket.org/ftakaaki/">https://bitbucket.org/ftakaaki/</a><br /></dd>
 </dl>
+</div>
+</div>
+<div id="outline-container-orga8419a3" class="outline-2">
+<h2 id="orga8419a3">Update History</h2>
+<div class="outline-text-2" id="text-orga8419a3">
+<ul class="org-ul">
+<li>2020/03/10 Add <i>Work Experience</i> and update <i>Affiliation</i>, <i>Contact</i>, <i>Publications</i>, and <i>Award</i><br /></li>
+<li>2019/08/12 Update Affiliation, Contact, Degree, Publications, Award, and Other Activity sections<br /></li>
+<li>2019/08/11 Move from <a href="http://www.osss.cs.tsukuba.ac.jp/~fukai">http://www.osss.cs.tsukuba.ac.jp/~fukai</a> to <a href="https://fukai-t.github.io/profile-page/">https://fukai-t.github.io/profile-page/</a><br /></li>
+<li>2018/02/14 Update Affiliation, Research Interests, and Publications<br /></li>
+<li>2016/03/14 Update Publications &amp; Add other activity<br /></li>
+<li>2015/12/11 Add English version page &amp; Update Research Interests, Publications &amp; Add Award<br /></li>
+<li>2015/05/09 Add Affiliation, Degrees, and Publications<br /></li>
+<li>2014/03/12 Open this page<br /></li>
+</ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Takaaki FUKAI</p>
-<p class="date">Created: 2019-08-12 Mon 13:45</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2020-03-10 Tue 22:42</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
