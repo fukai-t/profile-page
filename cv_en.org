@@ -1,0 +1,126 @@
+#+TITLE: Takaaki FUKAI
+#+AUTHOR: Postdoctral researcher in RIKEN Center of Computational Science
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:1 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc date:nil
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+- Address :: 7-1-26 Minatojima-minami-machi, Chuo-ku, Kobe, Hyogo 650-0047, Japan
+- TEL :: +81-78-940-5555
+- E-mail :: takaaki.fukai@riken.jp
+
+* COMMENT CV options
+#+OPTIONS: texht:t ':t toc:nil H:4
+#+LATEX_CLASS_OPTIONS: [a4paper,9pt] 
+#+BEGIN_SRC emacs-lisp
+ (setq org-latex-default-packages-alist
+   '(("AUTO" "inputenc" t)
+    ("T1" "fontenc" t)
+    ("" "fixltx2e" nil)
+    ("" "graphicx" t)
+    ("" "longtable" nil)
+    ("" "float" nil)
+    ("" "wrapfig" nil)
+    ("" "rotating" nil)
+    ("normalem" "ulem" t)
+    ("" "amsmath" t)
+    ("" "textcomp" t)
+    ("" "marvosym" t)
+    ("" "wasysym" nil)
+    ("" "amssymb" t)
+    ("hidelinks,pdfencoding=auto" "hyperref" nil)
+    "\\tolerance=1000"))
+#+END_SRC
+
+#+LATEX_HEADER: \setlength{\topmargin}{-18truemm}
+#+LATEX_HEADER: \setlength{\oddsidemargin}{-6truemm}
+#+LATEX_HEADER: \setlength{\evensidemargin}{-6truemm}
+#+LATEX_HEADER: \setlength{\textwidth}{160truemm}
+#+LATEX_HEADER: \setlength{\textheight}{241truemm}
+#+LATEX_HEADER: \renewcommand{\baselinestretch}{0.60}
+* Affiliation
+  - Postdoctral researcher in High Performance Big Data Research Team, RIKEN Center of Computational Science (R-CCS)
+  - Visited Researcher at Information Technology Center, The University of Tokyo
+
+* Work Experience
+  - January 2020-(Current): Postdoctral researcher in High Performance Big Data Research Team, RIKEN Center of Computational Science (R-CCS)
+  - June 2019-(Current): Visited Researcher at Information Technology Center, The University of Tokyo
+  - April 2018-December 2019: Software Developer at IBM Japan
+    - Worked as QA engineer of a web application and DevOps engineer of a cloud productions
+    - Technical experience: Software test, CI/CD, Jenkins, Docker, Kubernetes, Helm
+
+* Degrees
+  - September 2018, Doctor of Philosophy in Engineering, University of Tsukuba
+  - March 2015, Master of Engineering, University of Tsukuba
+  - March 2013, Bachelor of Engineering, Okayama University
+
+* Research Interests
+  - OS Kernel, Virtualization Software (BitVisor, Linux kernel)
+  - Cloud Computing (Bare-metal clouds)
+
+* Publications
+** Journal Paper
+   1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.
+      *Live Migration in Bare-metal Clouds.*
+      IEEE Transactions on Cloud Computing,
+      Jul 2018.
+      (Open Access: https://ieeexplore.ieee.org/document/8401692)
+** International Conference Papers (Refereed)
+   1. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.
+      *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*
+      In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018),
+      Dec 2018. (Acceptance Ratio: 19.8%) *[Best paper award]*.
+   2. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.
+      *Unified Hardware Abstraction Layer with Device Masquerade.*
+      In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018), 
+      Apr 2018.
+   3. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.
+      *Live Migration on ARM-based Micro-datacentres.*
+      In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),
+      Jan 2018.
+   4. [*] _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
+      *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.*
+      In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),
+      Dec 2017.
+   5. [*] _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+      *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
+      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), 
+      Dec 2015.
+      *[Best paper award]*.
+
+** International Workshop Posters (Refereed)
+   1. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.
+      *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.
+      The Fifteenth EuroSys Conference 2020 (EuroSys ’20),
+      April, 2020 (To be appear).
+
+   2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+     *Live Migration of Bare-metal Instances*.
+     5th Asia-Pacific Workshop on Systems (APSys 2014),
+     June, 2014
+
+
+* Award
+  - *IEEE Computer Society Japan Chapter Young Author Award 2019*.
+    IEEE Computer Society Tokyo/Japan Joint Chapter, December 2019.
+
+  - *Best Paper Award*.
+    The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018.
+
+  - *Best Paper Award*.
+    The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015.
+
+* Other Activity
+  - Profile page (on Github pages) :: https://fukai-t.github.io/profile-page/
+  - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
+  - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
+  - Slideshare :: http://www.slideshare.net/DeepTokikane/presentations
+  - Github :: https://github.com/fukai-t
+  - Bitbucket :: https://bitbucket.org/ftakaaki/

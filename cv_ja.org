@@ -1,0 +1,160 @@
+#+TITLE:     深井貴明(Takaaki FUKAI)
+#+AUTHOR:    理化学研究所 計算科学研究センター 特別研究員
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  jp
+#+OPTIONS:   H:1 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc date:nil
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+- 住所:: 〒650-0047 兵庫県神戸市中央区港島南町7-1-26
+- TEL:: 078-940-5555
+- E-mail:: takaaki.fukai@riken.jp
+* COMMENT CV options
+#+OPTIONS: texht:t ':t toc:nil H:4
+#+LATEX_CLASS_OPTIONS: [a4paper,9pt] 
+#+BEGIN_SRC emacs-lisp
+ (setq org-latex-default-packages-alist
+   '(("AUTO" "inputenc" t)
+    ("T1" "fontenc" t)
+    ("" "fixltx2e" nil)
+    ("" "graphicx" t)
+    ("" "longtable" nil)
+    ("" "float" nil)
+    ("" "wrapfig" nil)
+    ("" "rotating" nil)
+    ("normalem" "ulem" t)
+    ("" "amsmath" t)
+    ("" "textcomp" t)
+    ("" "marvosym" t)
+    ("" "wasysym" nil)
+    ("" "amssymb" t)
+    ("hidelinks,pdfencoding=auto" "hyperref" nil)
+    "\\tolerance=1000"))
+#+END_SRC
+
+#+LATEX_HEADER: \setlength{\topmargin}{-18truemm}
+#+LATEX_HEADER: \setlength{\oddsidemargin}{-6truemm}
+#+LATEX_HEADER: \setlength{\evensidemargin}{-6truemm}
+#+LATEX_HEADER: \setlength{\textwidth}{160truemm}
+#+LATEX_HEADER: \setlength{\textheight}{241truemm}
+#+LATEX_HEADER: \renewcommand{\baselinestretch}{0.60}
+* 所属
+  - 国立研究開発法人 理化学研究所 計算科学研究センター 高性能ビッグデータ研究チーム 特別研究員
+  - 東京大学 情報基盤センター (客員研究員)
+
+* 職歴
+  - 2020年 1月-現在: 国立研究開発法人 理化学研究所 計算科学研究センター 高性能ビッグデータ研究チーム 特別研究員
+  - 2019年 6月-現在: 東京大学 情報基盤センター 客員研究員
+  - 2018年 4月-2019年12月: 日本アイ・ビー・エム株式会社 ソフトウェア&システム開発研究所 製品開発エンジニア
+    - Web アプリケーションのQA, クラウド製品の DevOps 業務に従事
+    - 業務経験: ソフトウェアテスト, CI/CD, Jenkins, Docker, Kubernetes, Helm
+  
+* 学歴
+  - 2018年9月 筑波大学 システム情報工学研究科 「博士(工学)」 取得 (筑波大学) (博乙第2892号)
+  - 2018年3月 筑波大学大学院 博士後期課程システム情報工学研究科 コンピュータサイエンス専攻 退学
+  - 2015年4月 筑波大学大学院 博士後期課程システム情報工学研究科 コンピュータサイエンス専攻 入学
+  - 2015年3月 筑波大学大学院 博士前期課程システム情報工学研究科 コンピュータサイエンス専攻 卒業
+  - 2013年4月 筑波大学大学院 博士前期課程システム情報工学研究科 コンピュータサイエンス専攻 入学
+  - 2013年3月 岡山大学工学部情報工学科 卒業
+  - 2009年4月 岡山大学工学部情報工学科 入学
+** 学位論文リスト
+   - _深井貴明_ ．
+     *ベアメタルクラウドにおける物理マシン管理に関する研究* ．
+      筑波大学 システム情報工学研究科 博士論文，
+     2018年9月．
+   - _深井貴明_ ．
+     *物理マシン間のOSライブマイグレーションに関する研究* ．
+     筑波大学大学院システム情報工学研究科コンピュータサイエンス専攻 修士論文，
+     2015年3月．
+   - _深井貴明_ ． 
+     *Mintオペレーティングにおける柔軟な起動順序の実現* ．
+     岡山大学工学部情報工学科 卒業研究報告書，
+     2013年3月．
+
+* 研究分野
+  - OS カーネル / ハイパバイザ (BitVisor, Linux カーネル)
+  - クラウドコンピューティング (ベアメタルクラウド)
+
+* 主な業績
+** 論文誌
+   1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.
+      *Live Migration in Bare-metal Clouds.*
+      IEEE Transactions on Cloud Computing,
+      Jul 2018.
+      (Open Access: https://ieeexplore.ieee.org/document/8401692)
+** 国際会議
+   1. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.
+      *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*
+      In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018),
+      Dec 2018. (Acceptance Ratio: 19.8%) *[Best paper award]*.
+   2. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.
+      *Unified Hardware Abstraction Layer with Device Masquerade.*
+      In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018), 
+      Apr 2018.
+   3. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.
+      *Live Migration on ARM-based Micro-datacentres.*
+      In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),
+      Jan 2018.
+   4. [*] _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
+      *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.*
+      In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),
+      Dec 2017.
+   5. [*] _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+      *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
+      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), 
+      Dec 2015.
+      *[Best paper award]*.
+
+** 国内研究会
+  1. 荻野 将拓, 味曽野 雅史, _深井 貴明_, 品川 高廣．
+     *ハードウェア障害に対するハイパーバイザの対故障性検証．*
+     第143回 システムソフトウェアとオペレーティング・システム研究会．
+     2018年5月
+  2. 東 耕平, 竹腰 開, _深井 貴明_, 品川 高廣, 加藤 和彦
+    *ベアメタルクラウドにおけるハードウェア保護*
+    第136回 システムソフトウェアとオペレーティング・システム研究会．
+    2016年2月
+  3. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
+    *物理マシン間のライブマイグレーション手法の提案*
+    第127回 システムソフトウェアとオペレーティング・システム研究会．
+    2013年12月
+** 国外ポスタ発表
+   1. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+     *Live Migration of Bare-metal Instances*
+     5th Asia-Pacific Workshop on Systems (APSys 2014).
+     June, 2014
+** 国内ポスタ発表
+  1. 安岡 亮輔， _深井 貴明_ ，品川 高廣， 加藤 和彦．
+    *ネステッド仮想化の動的 ON/OFF による仮想マシンモニタ若化*
+    第28回コンピュータシステム・シンポジウム．(ComSys 2016)
+    2016年11月
+* 研究プロジェクト参加歴
+  - JST 研究成果最適展開支援事業 (A-STEP) ハイリスク挑戦タイプ
+    「高セキュリティ・高信頼のクラウドコンピューティング環境実現に向けた基盤システムソフトウェア「BitVisor」の研究開発」．
+    企業責任者：株式会社イーゲル 松原克弥, 研究責任者: 東京大学 品川高廣
+    (開発支援担当として参加．)
+    2014年1月～2016年3月 
+
+* 受賞歴
+  1. *IEEE Computer Society Japan Chapter Young Author Award 2019*
+     IEEE Computer Society Tokyo/Japan Joint Chapter, 2019年12月
+  2. *Best Paper Award*.
+     The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018
+  3. *Best Paper Award*.
+    The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015
+  4. *岡山大学工学部優秀学生賞* ．
+     岡山大学工学部，2013年3月
+
+* 外部ページ
+  - Profile page (on Github pages) :: https://fukai-t.github.io/profile-page/
+  - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
+  - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
+  - Slideshare :: http://www.slideshare.net/DeepTokikane/presentations
+  - Github :: https://github.com/fukai-t
+  - Bitbucket :: https://bitbucket.org/ftakaaki/
