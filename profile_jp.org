@@ -15,7 +15,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 English version is [[./profile_en.html][here]]
 * 所属
-  - 理化学研究所 (特別研究員)
+  - 理化学研究所 計算科学研究センター (特別研究員)
   - 東京大学 情報基盤センター (客員研究員)
 
 * 連絡先
@@ -93,10 +93,16 @@ English version is [[./profile_en.html][here]]
     2013年12月
    [[./files/OS127-fukai.pdf][PDF]] [[./ipsjnotice.html][ここに掲載した著作物の利用に関する注意]]
 ** 国外ポスタ発表
-   1. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+   1. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.
+      *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.
+      The Fifteenth EuroSys Conference 2020 (EuroSys ’20).
+      April, 2020 (To be appear).
+
+   2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
      *Live Migration of Bare-metal Instances*
      5th Asia-Pacific Workshop on Systems (APSys 2014).
      June, 2014
+
 ** 国内ポスタ発表
   1. 安岡 亮輔， _深井 貴明_ ，品川 高廣， 加藤 和彦
     *ネステッド仮想化の動的 ON/OFF による仮想マシンモニタ若化*
@@ -151,6 +157,7 @@ English version is [[./profile_en.html][here]]
   - Bitbucket :: https://bitbucket.org/ftakaaki/
 
 * 更新履歴
+  - 2020/04/07 /業績/ の更新
   - 2020/03/10 /職歴/ の追加, /所属/, /連絡先/, /業績/, /受賞歴/ の更新
   - 2019/08/12 所属, 連絡先, 学歴, 業績, 受賞歴, その他活動を更新
   - 2019/08/11 本ページを http://www.osss.cs.tsukuba.ac.jp/~fukai から https://fukai-t.github.io/profile-page/ へ移動

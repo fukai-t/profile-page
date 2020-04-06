@@ -16,8 +16,8 @@
 
 Japanese version is [[./profile_jp.html][here]]
 * Affiliation
-  - Postdoctoral Researcher at RIKEN
-  - Visited Researcher at Information Technology Center, The University of Tokyo
+  - Postdoctoral Researcher in RIKEN Center of Computational Science (R-CCS)
+  - Visited Researcher in Information Technology Center, The University of Tokyo
 
 * Contact
   - E-mail ::
@@ -87,10 +87,16 @@ Japanese version is [[./profile_jp.html][here]]
      2013年12月
    [[./files/OS127-fukai.pdf][PDF]] [[./ipsjnotice.html][ここに掲載した著作物の利用に関する注意]]
 ** International Workshop Posters (Refereed)
-   1. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+   1. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.
+      *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.
+      The Fifteenth EuroSys Conference 2020 (EuroSys ’20).
+      April, 2020 (To be appear).
+
+   2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
      *Live Migration of Bare-metal Instances*
      5th Asia-Pacific Workshop on Systems (APSys 2014).
      June, 2014
+
 ** Domestic Workshop Posters (Non-Refereed)
    (Sorry for information in Japanese, but there is no official information in English)
   1. 安岡 亮輔， _深井 貴明_ ，品川 高廣， 加藤 和彦
@@ -127,7 +133,7 @@ Japanese version is [[./profile_jp.html][here]]
     Faculty of Engineering, Okayama University, March 2013
 
 * Work Experience
-  - April 2018 -- December 2019: Software Developer at IBM Japan
+  - April 2018-December 2019: Software Developer at IBM Japan
     - Worked as QA engineer of a web application and DevOps engineer of a cloud productions
     - Technical experience: Software test, CI/CD, Jenkins, Docker, Kubernetes, Helm
 
@@ -139,6 +145,7 @@ Japanese version is [[./profile_jp.html][here]]
   - Github :: https://github.com/fukai-t
   - Bitbucket :: https://bitbucket.org/ftakaaki/
 * Update History
+  - 2020/04/07 Update /Publications/
   - 2020/03/10 Add /Work Experience/ and update /Affiliation/, /Contact/, /Publications/, and /Award/
   - 2019/08/12 Update Affiliation, Contact, Degree, Publications, Award, and Other Activity sections
   - 2019/08/11 Move from http://www.osss.cs.tsukuba.ac.jp/~fukai to https://fukai-t.github.io/profile-page/
