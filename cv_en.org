@@ -1,5 +1,4 @@
-#+TITLE: Takaaki FUKAI
-#+AUTHOR: Postdoctral researcher in RIKEN Center of Computational Science
+#+TITLE: Postdoctral researcher in RIKEN Center of Computational Science
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
@@ -14,14 +13,24 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 
 \mbox{}
-Address: 7-1-26 Minatojima-minami-machi, Chuo-ku, Kobe, Hyogo 650-0047, Japan
-TEL: +81-78-940-5555
-E-mail: takaaki.fukai@riken.jp
 
 * COMMENT CV options
-#+OPTIONS: texht:t ':t toc:nil H:4
-#+LATEX_CLASS_OPTIONS: [a4paper,9pt] 
-#+BEGIN_SRC emacs-lisp
+
+#+name: setup
+#+BEGIN_SRC emacs-lisp :results silent :exports none
+  (add-to-list 'org-latex-classes
+           '("moderncv"
+              "\\documentclass{moderncv}
+              [NO-DEFAULT-PACKAGES]
+              [EXTRA]"
+              ("\\section{%s}" . "\\section*{%s}")
+              ("\\subsection{%s}" . "\\subsection*{%s}")
+              ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+              ("\\paragraph{%s}" . "\\paragraph*{%s}")
+              ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+ (setq org-latex-with-hyperref nil)
+
  (setq org-latex-default-packages-alist
    '(("AUTO" "inputenc" t)
     ("T1" "fontenc" t)
@@ -41,12 +50,30 @@ E-mail: takaaki.fukai@riken.jp
     "\\tolerance=1000"))
 #+END_SRC
 
+#+OPTIONS: texht:nil ':t toc:nil H:4
+#+LATEX_CLASS: moderncv
+#+LATEX_CLASS_OPTIONS: [a4paper,9pt] 
+#+LATEX_HEADER: \usepackage[normalem]{ulem}
+
+% modern CV option 
+#+LATEX_HEADER: \moderncvtheme[blue]{classic}
+#+LATEX_HEADER: %\moderncvtheme[blue]{casual}
+#+LATEX_HEADER: \firstname{Takaaki}
+#+LATEX_HEADER: \lastname{FUKAI}
+#+LATEX_HEADER: \email{takaaki.fukai@riken.jp}
+#+LATEX_HEADER: \address{7-1-26 Minatojima-minami-machi, Chuo-ku,\\Kobe, Hyogo 650-0047, Japan\\}
+#+LATEX_HEADER: \phone{+81-78-940-5555}
+
+
+
+% Layout option
 #+LATEX_HEADER: \setlength{\topmargin}{-18truemm}
 #+LATEX_HEADER: \setlength{\oddsidemargin}{-6truemm}
 #+LATEX_HEADER: \setlength{\evensidemargin}{-6truemm}
 #+LATEX_HEADER: \setlength{\textwidth}{160truemm}
 #+LATEX_HEADER: \setlength{\textheight}{241truemm}
 #+LATEX_HEADER: \renewcommand{\baselinestretch}{0.8}
+
 * COMMENT TODO list
   - [X] Supervisor
   - [ ] Formatting title
