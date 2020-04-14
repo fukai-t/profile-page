@@ -2,7 +2,7 @@
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
-#+OPTIONS:   H:1 num:nil toc:t \n:t @:t ::t |:t ^:t -:t f:t *:t <:nil
+#+OPTIONS:   H:1 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc date:nil
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
@@ -54,6 +54,8 @@
 #+LATEX_CLASS: moderncv
 #+LATEX_CLASS_OPTIONS: [a4paper,9pt] 
 #+LATEX_HEADER: \usepackage[normalem]{ulem}
+#+LATEX_HEADER: \usepackage{enumitem}
+
 
 % modern CV option 
 #+LATEX_HEADER: \moderncvtheme[blue]{classic}
@@ -76,7 +78,7 @@
 
 * COMMENT TODO list
   - [X] Supervisor
-  - [ ] Formatting title
+  - [X] Formatting title
   - [ ] Skills
   - [ ] Research Interests
   - [ ] Adjust margin between items
@@ -86,71 +88,142 @@
   - Visited Researcher at Information Technology Center, The University of Tokyo
 
 * Work Experience
-  - January 2020-Current: :: Postdoctral researcher in High Performance Big Data Research Team,
-       RIKEN Center of Computational Science (R-CCS)
+  - January 2020-Current: :: Postdoctral researcher in High Performance Big Data Research Team \newline RIKEN Center of Computational Science (R-CCS)
   - June 2019-Current: :: Visited Researcher at Information Technology Center, The University of Tokyo
-  - April 2018-December 2019: :: Software Developer in IBM Japan
+  - April 2018-December 2019: :: Software Developer in IBM Japan \newline
     I have worked as a QA engineer of a web application and a DevOps engineer of a public cloud service and a private cloud production. My technical experiences in this position are software test, CI/CD, Jenkins, Docker, Kubernetes and Helm.
 
-* Degrees
-  - September 2018: :: Doctor of Philosophy in Engineering, University of Tsukuba
-		      Supervisor: Professor Kazuhiko Kato
-  - March 2015: :: Master of Engineering, University of Tsukuba
-		  Supervisor: Professor Kazuhiko Kato
-  - March 2013: :: Bachelor of Engineering, Okayama University
-		  Supervisor: Professor Hideo Taniguchi
+* Education
+  - September 2018: :: Doctor of Philosophy in Engineering, University of Tsukuba \newline
+		      Supervisor: Professor Kazuhiko Kato \newline
+  - March 2015: :: Master of Engineering, University of Tsukuba \newline
+		  Supervisor: Professor Kazuhiko Kato \newline
+  - March 2013: :: Bachelor of Engineering, Okayama University \newline
+		  Supervisor: Professor Hideo Taniguchi \newline
+
+* Award
+  - *IEEE Computer Society Japan Chapter Young Author Award 2019*.\newline
+    IEEE Computer Society Tokyo/Japan Joint Chapter, December 2019.\newline
+
+  - *Best Paper Award*.\newline
+    The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018.\newline
+
+  - *Best Paper Award*.\newline
+    The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015.\newline
+
 
 * Research Interests
-  - OS Kernel, Virtualization Software (BitVisor, Linux kernel)
-  - Cloud Computing (Bare-metal clouds)
+
+  # My research interest is in OS kernel, virtualization technology, device driver layer, and firmware.
+  # My research interests include operating systems, virtualization software, firmware security, and cloud computing.
+  # In my past works, I mainly interested in thin-hypervisor which OS-independently runs without device virtualization.
+  # I proposed a live migration scheme and a firmware protection scheme based on the thin-hypervisor to improve the serviceability of bare-metal instances in IaaS clouds.
+  # I am also interested in light-weight nested-virtualization(2).
+  # I am currently working on a VMM live refreshing with on-demand nested virtualization and new hardware emulation system for developing and evaluating applications.
+  # In (1), I proposed an OS-independent live migration scheme without virtualization that the hypervisor carefully controlling physical hardware instead of virtualization.
+
+  My research interests include operating systems, virtualization software, firmware security, and cloud computing.
+  In my past research, I mainly worked on improving the serviceability of bare-metal instances in IaaS clouds.
+  I proposed a live migration scheme and a firmware protection scheme for the bare-metal instances.
+  In these works, I exploited a thin-hypervisor which OS-independently runs without device virtualization.
+  I am also interested in light-weight nested-virtualization and contributed to (2) in this technical respect.
+  I am currently working on a VMM live refreshing with on-demand nested virtualization, and on new hardware emulation system for developing and evaluating applications.
+
+
+ # are for improving serviceability of bare-metal clouds, a IaaS clouds providing physical machines instead of virtual machines.
+  # because bera-metal clouds does not allows device virtualization and adding dependency on guest OS, 
+  # we proposed OS-independent schemes based on thin-hypervisor which does not almost hardware.
+  # To improve serviceability and security of bare-metal clouds with keeping advantage of them,
+  # we proposed methods achieving OS-transparency and without device virtualization and special hardware, by thin-hypervisor.
+  # The thin-hypervisor based methods achieve new function by deeply control hardware independently on OS, instead of virtualize devices.
+  
+#   I am interested in controlling deeply and fully (sometime tricky) computer system in software layer facing hardware.
+#   To achieve the control, I work on understanding hardware behavior deeply, sometime, beyond documented specification.
+#   Controlling in low level software achieve OS and application transparency control with high privilege.
+#   My past works achieving controlling commodity machines (i.e. PC architecture base computer with Intel architecture CPU) without special hardware.
+#   My past research projects are the followings:
+#   is mainly for clouds, especially bare-metal clouds.
+  
+  # - (1) Live migration in Bare-metal clouds. ::
+  #      OS Live migration is a important function for IaaS serviceability.
+  #      Live migration generally provided by VMM,
+  #      while that incurs virtualization overhead and prohibits users to use hardware function such as RDMA directory.
+  #      Bare-metal clouds are IaaS providing physical machines instead of virtual machines.
+  #      In bare-metal clouds, the live migration is not supported due to lack of VMM.
+  #      Previous works provides various live migration schemes without device virtualization.
+  #      However, these schemes are not OS transparency, i.e. requires modification of guest OS or supporting special hardware functions.
+  #      We proposed completely OS-independent live migration scheme for bare-metal clouds.
+       
+  # - (2) Hardware protection scheme for bare-metal clouds. ::
+  #      Bare-metal clouds provide physical machine.
+  #      The bare-metal cloud users can access the physical hardware directory from OS.
+  #      This allows user to firmware access.
+  #      If firmware is broken, the hardware cannot boot or the firmware may replaced with rootkit.
+  #      So if malicious user attack the firmware, the cloud service will be corrupted. 
+  #      To prevent this, we proposed protecting firmware by thin-hypervisor.
+  #      The thin-hypervisor does not virtualize hardware, however block write accesses to the firmware.
+  
+
+  # - (3) On-demand nested virtualization scheme for live VMM refreshing. ::
+  #      Generally, software rebooting is unavoidable event for security update and recover from memory leak.
+  #      VMMs is no exception.
+  #      However rebooting VMM cause stopping VM running on the VMM.
+  #      In IaaS clouds, the VM stopping by vendor is unacceptable.
+  #      To avoid VM stopping in VMM rebooting, cloud vendor can live migrate to the other physical machine before rebooting VMM.
+  #      Live migration of VM heavily load network and requires additional physical machine.
+  #      To avoid these things, previous research introduced nested virtualization techniques allowing multiple VMMs run on a VMM in a single physical machines.
+  #      However, nested virtualization results constant performance overhead even if the system does not executing VMM rebooting process.
+  #      To avoid nested virtualization overhead with keeping there advantage, we propose on-demand nested virtualization.
 
 * Publications
 ** Journal Paper
-   1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.
-      *Live Migration in Bare-metal Clouds.*
-      IEEE Transactions on Cloud Computing, Jul 2018.
-      (Open Access: https://ieeexplore.ieee.org/document/8401692)
+   1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.\newline
+      *Live Migration in Bare-metal Clouds.*\newline
+      IEEE Transactions on Cloud Computing, Jul 2018.\newline
+      (Open Access: https://ieeexplore.ieee.org/document/8401692)\newline
 
 ** International Conference/Workshop Papers (Refereed)
-   1. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.
-      *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*
-      In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018), Dec 2018.
-      (Acceptance Ratio: 19.8%) *[Best paper award]*.
-   2. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.
-      *Unified Hardware Abstraction Layer with Device Masquerade.*
-      In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018), Apr 2018.
-   3. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.
-      *Live Migration on ARM-based Micro-datacentres.*
-      In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018), Jan 2018.
-   4. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
-      *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.*
-      In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017), Dec 2017.
-   5. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
-      *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
-      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), Dec 2015.
-      *[Best paper award]*.
+   1. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.\newline
+      *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.* \newline
+      In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017), Dec 2017.\newline
+   2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.\newline
+      *OS-Independent Live Migration Scheme for Bare-metal Clouds.*\newline
+      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), Dec 2015.\newline
+      *[Best paper award]*.\newline
 
 ** International Conference/Workshop Posters (Refereed)
-   1. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.
-      *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.
-      The Fifteenth EuroSys Conference 2020 (EuroSys ’20), April, 2020 (To be appear).
+   1. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.\newline
+      *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.\newline
+      The Fifteenth EuroSys Conference 2020 (EuroSys '20), poster, April, 2020 (To be appear).\newline
 
-   2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
-     *Live Migration of Bare-metal Instances*.
-     5th Asia-Pacific Workshop on Systems (APSys 2014), June, 2014
+   2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.\newline
+     *Live Migration of Bare-metal Instances*.\newline
+     5th Asia-Pacific Workshop on Systems (APSys 2014), June, 2014\newline
 
 
-* Award
-  - *IEEE Computer Society Japan Chapter Young Author Award 2019*.
-    IEEE Computer Society Tokyo/Japan Joint Chapter, December 2019.
+* Other publications
 
-  - *Best Paper Award*.
-    The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018.
+   1. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.\newline
+      *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*\newline
+      In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018), Dec 2018.\newline
+      (Acceptance Ratio: 19.8%) *[Best paper award]*.\newline
 
-  - *Best Paper Award*.
-    The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015.
+   2. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.\newline
+      *Unified Hardware Abstraction Layer with Device Masquerade.*\newline
+      In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018), Apr 2018.\newline
 
-* Other Activity
+   3. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.\newline
+      *Live Migration on ARM-based Micro-datacentres.*\newline
+      In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018), Jan 2018.\newline
+
+
+* Skills
+  - Expertise :: Intel VT-x, Nested Virtualization, Thin Hypervisor (BitVisor), Operating systems, Linux kernel, device drivers, Firmware security, QEMU/KVM, IaaS Clouds, System level performance analyze
+  - Technical experiences :: Docker, kubernetes, CI/CD, Microservice, software test
+  - Software Programming Skills :: C (10+ years), Shell script(10+ years), Python, Java (Include Android application), Groovy, x86 assembly, ML, haskell, HSP, and reading more programming languages (Go, Ruby)
+  - Platforms :: Linux, Mac, Windows
+  - Languages :: Japanese, English
+* COMMENT Other Activity
   - Profile page (on Github pages) :: https://fukai-t.github.io/profile-page/
   - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
   - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
