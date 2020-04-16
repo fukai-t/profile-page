@@ -1,4 +1,4 @@
-#+TITLE: Postdoctral researcher in RIKEN Center of Computational Science
+#+TITLE: \mbox{}
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
@@ -11,8 +11,6 @@
 #+LINK_HOME: 
 #+XSLT:
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
-
-\mbox{}
 
 * COMMENT CV options
 
@@ -74,32 +72,43 @@
 #+LATEX_HEADER: \setlength{\evensidemargin}{-6truemm}
 #+LATEX_HEADER: \setlength{\textwidth}{160truemm}
 #+LATEX_HEADER: \setlength{\textheight}{241truemm}
-#+LATEX_HEADER: \renewcommand{\baselinestretch}{0.8}
+#+LATEX_HEADER: \renewcommand{\baselinestretch}{1.0}
 
-* COMMENT TODO list
-  - [X] Supervisor
-  - [X] Formatting title
-  - [ ] Skills
-  - [ ] Research Interests
-  - [ ] Adjust margin between items
+* Summary
+I received my Ph.D. from the department of computer science, University of Tsukuba in 2018, after obtaining a B.Eng. from Okayama University in 2013.
+Since January 2020, I have been postdoctoral research at RIKEN Center of Computational Science.
+Before that, I worked for IBM Japan as a software developer.
+My research interest centers on how to improve serviceability and security of computer systems without OS-modification and virtualization overhead, by exploiting thin-hypervisor.
+One of my important works is that I proposed a live migration scheme that works without OS modification and device virtualization.
+
 * Affiliation
-  - Postdoctral researcher in High Performance Big Data Research Team,
+  - Postdoctral researcher in High Performance Big Data Research Team, \newline
     RIKEN Center of Computational Science (R-CCS)
   - Visited Researcher at Information Technology Center, The University of Tokyo
 
-* Work Experience
-  - January 2020-Current: :: Postdoctral researcher in High Performance Big Data Research Team \newline RIKEN Center of Computational Science (R-CCS)
-  - June 2019-Current: :: Visited Researcher at Information Technology Center, The University of Tokyo
-  - April 2018-December 2019: :: Software Developer in IBM Japan \newline
-    I have worked as a QA engineer of a web application and a DevOps engineer of a public cloud service and a private cloud production. My technical experiences in this position are software test, CI/CD, Jenkins, Docker, Kubernetes and Helm.
+* Research and Work Experience
+  - January 2020-Current: *Postdoctral researcher* \newline 
+    /High Performance Big Data Research Team RIKEN Center of Computational Science/  \newline
+    I am engaged in research about high-performance computing with next-generation hardware.
+
+  - June 2019-Current: *Visited Researcher* \newline
+    /Information Technology Center, The University of Tokyo/  \newline
+    I am engaged in research about VMM live refreshing with on-demand nested virtualization [[vmm_refreshing]].
+
+  - April 2018-December 2019: *Software Developer*  \newline
+    /IBM Japan/  \newline
+    I was engaged in the development of a web application, a SaaS cloud service, and a private cloud production.
 
 * Education
-  - September 2018: :: Doctor of Philosophy in Engineering, University of Tsukuba \newline
-		      Supervisor: Professor Kazuhiko Kato \newline
-  - March 2015: :: Master of Engineering, University of Tsukuba \newline
-		  Supervisor: Professor Kazuhiko Kato \newline
-  - March 2013: :: Bachelor of Engineering, Okayama University \newline
-		  Supervisor: Professor Hideo Taniguchi \newline
+  - September 2018: *Doctor of Philosophy in Engineering, University of Tsukuba* \newline
+    Supervisor: Professor Kazuhiko Kato \newline
+
+  - March 2015: *Master of Engineering, University of Tsukuba* \newline
+    Supervisor: Professor Kazuhiko Kato \newline
+
+  - March 2013: *Bachelor of Engineering, Okayama University* \newline
+    Supervisor: Professor Hideo Taniguchi \newline
+
 
 * Award
   - *IEEE Computer Society Japan Chapter Young Author Award 2019*.\newline
@@ -110,103 +119,49 @@
 
   - *Best Paper Award*.\newline
     The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015.\newline
-
-
-* Research Interests
-
-  # My research interest is in OS kernel, virtualization technology, device driver layer, and firmware.
-  # My research interests include operating systems, virtualization software, firmware security, and cloud computing.
-  # In my past works, I mainly interested in thin-hypervisor which OS-independently runs without device virtualization.
-  # I proposed a live migration scheme and a firmware protection scheme based on the thin-hypervisor to improve the serviceability of bare-metal instances in IaaS clouds.
-  # I am also interested in light-weight nested-virtualization(2).
-  # I am currently working on a VMM live refreshing with on-demand nested virtualization and new hardware emulation system for developing and evaluating applications.
-  # In (1), I proposed an OS-independent live migration scheme without virtualization that the hypervisor carefully controlling physical hardware instead of virtualization.
-
-  My research interests include operating systems, virtualization software, firmware security, and cloud computing.
-  In my past research, I mainly worked on improving the serviceability of bare-metal instances in IaaS clouds.
-  I proposed a live migration scheme and a firmware protection scheme for the bare-metal instances.
-  In these works, I exploited a thin-hypervisor which OS-independently runs without device virtualization.
-  I am also interested in light-weight nested-virtualization and contributed to (2) in this technical respect.
-  I am currently working on a VMM live refreshing with on-demand nested virtualization, and on new hardware emulation system for developing and evaluating applications.
-
-
- # are for improving serviceability of bare-metal clouds, a IaaS clouds providing physical machines instead of virtual machines.
-  # because bera-metal clouds does not allows device virtualization and adding dependency on guest OS, 
-  # we proposed OS-independent schemes based on thin-hypervisor which does not almost hardware.
-  # To improve serviceability and security of bare-metal clouds with keeping advantage of them,
-  # we proposed methods achieving OS-transparency and without device virtualization and special hardware, by thin-hypervisor.
-  # The thin-hypervisor based methods achieve new function by deeply control hardware independently on OS, instead of virtualize devices.
-  
-#   I am interested in controlling deeply and fully (sometime tricky) computer system in software layer facing hardware.
-#   To achieve the control, I work on understanding hardware behavior deeply, sometime, beyond documented specification.
-#   Controlling in low level software achieve OS and application transparency control with high privilege.
-#   My past works achieving controlling commodity machines (i.e. PC architecture base computer with Intel architecture CPU) without special hardware.
-#   My past research projects are the followings:
-#   is mainly for clouds, especially bare-metal clouds.
-  
-  # - (1) Live migration in Bare-metal clouds. ::
-  #      OS Live migration is a important function for IaaS serviceability.
-  #      Live migration generally provided by VMM,
-  #      while that incurs virtualization overhead and prohibits users to use hardware function such as RDMA directory.
-  #      Bare-metal clouds are IaaS providing physical machines instead of virtual machines.
-  #      In bare-metal clouds, the live migration is not supported due to lack of VMM.
-  #      Previous works provides various live migration schemes without device virtualization.
-  #      However, these schemes are not OS transparency, i.e. requires modification of guest OS or supporting special hardware functions.
-  #      We proposed completely OS-independent live migration scheme for bare-metal clouds.
-       
-  # - (2) Hardware protection scheme for bare-metal clouds. ::
-  #      Bare-metal clouds provide physical machine.
-  #      The bare-metal cloud users can access the physical hardware directory from OS.
-  #      This allows user to firmware access.
-  #      If firmware is broken, the hardware cannot boot or the firmware may replaced with rootkit.
-  #      So if malicious user attack the firmware, the cloud service will be corrupted. 
-  #      To prevent this, we proposed protecting firmware by thin-hypervisor.
-  #      The thin-hypervisor does not virtualize hardware, however block write accesses to the firmware.
-  
-
-  # - (3) On-demand nested virtualization scheme for live VMM refreshing. ::
-  #      Generally, software rebooting is unavoidable event for security update and recover from memory leak.
-  #      VMMs is no exception.
-  #      However rebooting VMM cause stopping VM running on the VMM.
-  #      In IaaS clouds, the VM stopping by vendor is unacceptable.
-  #      To avoid VM stopping in VMM rebooting, cloud vendor can live migrate to the other physical machine before rebooting VMM.
-  #      Live migration of VM heavily load network and requires additional physical machine.
-  #      To avoid these things, previous research introduced nested virtualization techniques allowing multiple VMMs run on a VMM in a single physical machines.
-  #      However, nested virtualization results constant performance overhead even if the system does not executing VMM rebooting process.
-  #      To avoid nested virtualization overhead with keeping there advantage, we propose on-demand nested virtualization.
-
+    
+    
 * Publications
 ** Journal Paper
+#+ATTR_LATEX: :options [label=\textrm{[}\arabic*\textrm{]}, ref=\textrm{[}\arabic*\textrm{]}]
    1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.\newline
       *Live Migration in Bare-metal Clouds.*\newline
       IEEE Transactions on Cloud Computing, Jul 2018.\newline
       (Open Access: https://ieeexplore.ieee.org/document/8401692)\newline
+      <<migration1>>
 
 ** International Conference/Workshop Papers (Refereed)
+   #+ATTR_LATEX: :options [resume*]
    1. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.\newline
       *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.* \newline
       In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017), Dec 2017.\newline
+      <<protection>>
+
    2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.\newline
       *OS-Independent Live Migration Scheme for Bare-metal Clouds.*\newline
       In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), Dec 2015.\newline
       *[Best paper award]*.\newline
+      <<migration2>>
 
 ** International Conference/Workshop Posters (Refereed)
+   #+ATTR_LATEX: :options [resume*]
    1. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.\newline
       *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.\newline
       The Fifteenth EuroSys Conference 2020 (EuroSys '20), poster, April, 2020 (To be appear).\newline
+      <<vmm_refreshing>>
 
    2. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.\newline
      *Live Migration of Bare-metal Instances*.\newline
      5th Asia-Pacific Workshop on Systems (APSys 2014), June, 2014\newline
-
+      <<migration3>>
 
 * Other publications
-
+   #+ATTR_LATEX: :options [resume*]
    1. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.\newline
       *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*\newline
       In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018), Dec 2018.\newline
       (Acceptance Ratio: 19.8%) *[Best paper award]*.\newline
+      <<faultvisor>>
 
    2. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.\newline
       *Unified Hardware Abstraction Layer with Device Masquerade.*\newline
@@ -218,15 +173,29 @@
 
 
 * Skills
-  - Expertise :: Intel VT-x, Nested Virtualization, Thin Hypervisor (BitVisor), Operating systems, Linux kernel, device drivers, Firmware security, QEMU/KVM, IaaS Clouds, System level performance analyze
-  - Technical experiences :: Docker, kubernetes, CI/CD, Microservice, software test
-  - Software Programming Skills :: C (10+ years), Shell script(10+ years), Python, Java (Include Android application), Groovy, x86 assembly, ML, haskell, HSP, and reading more programming languages (Go, Ruby)
-  - Platforms :: Linux, Mac, Windows
-  - Languages :: Japanese, English
-* COMMENT Other Activity
-  - Profile page (on Github pages) :: https://fukai-t.github.io/profile-page/
+  - *Research Expertise* \newline
+    Thin-hypervisor, Virtualization, Operating systems, Firmware security, IaaS Clouds
+
+  - *Technical Expertise* \newline
+    Intel VT-x, PC-architecture low-level programming, Device driver, Linux kernel, QEMU/KVM
+
+  - *Software service development skills (Technical experience as software developer)* \newline
+    Docker, Kubernetes, CI/CD, Microservice architecture, Software test
+
+  - *Software Programming Skills* \newline
+    C language(10+ years), x86 assembly, Shell script, Python, Java (Include Android application), TypeScript
+
+  - *Platforms* \newline
+    Linux, Mac, Windows
+
+  - *Languages* \newline
+    Japanese(Native), English(Intermediate)
+
+* Research Activities
+  - April 2020-Current :: Editorial Board Member of IPSJ Transactions on Advanced Computing Systems (ACS)
+  - April 2020-Current :: Steering Committee Member of IPSJ Special Interest Group on System Software and Operating Systems (SIGOS)
+
+* Other Information
+  - Profile page :: https://fukai-t.github.io/profile-page/
   - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
-  - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp
-  - Slideshare :: http://www.slideshare.net/DeepTokikane/presentations
-  - Github :: https://github.com/fukai-t
-  - Bitbucket :: https://bitbucket.org/ftakaaki/
+  - Linkedin :: https://www.linkedin.com/in/takaaki-fukai-b378a7141/
