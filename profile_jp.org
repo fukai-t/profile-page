@@ -7,33 +7,32 @@
 #+OPTIONS:   H:1 num:nil toc:t \n:n @:t ::t |:t ^:t -:t f:t *:t <:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_FILE_NAME: ./docs/profile_jp.html
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:   
-#+LINK_HOME: 
+#+LINK_UP:
+#+LINK_HOME:
 #+XSLT:
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 English version is [[./profile_en.html][here]]
 * 所属
-  - [[https://www.digiarc.aist.go.jp/team/ccirt/][国立研究開発法人 産業技術総合研究所 デジタルアーキテクチャ研究センター 超分散コンピューティング研究チーム ]]
-    - [[https://www.digiarc.aist.go.jp/recruit/][採用情報]]
-    - [[https://unit.aist.go.jp/hrd/keiyaku_koubo/2022-digiarc_0016.html#ttl][公募 (研究員)]]
-    - [[https://unit.aist.go.jp/hrd/keiyaku_koubo/2022-digiarc_0015.html#ttl][公募 (契約職員, 学生含む)]]
+  - [[https://www.ipri.aist.go.jp/][国立研究開発法人 産業技術総合研究所 インテリジェントプラットフォーム研究部門]]
+  - 主任研究員
 
 * 連絡先
   - メールアドレス :: takaaki.fukai (at) aist.go.jp
   - 住所 :: 〒135-0064 東京都江東区青海2-3-26
 
 * 研究分野
-  - OS カーネル / ハイパバイザ
+  - 軽量ハイパバイザ
     - [[https://www.bitvisor.org/][BitVisor]]
     - [[https://github.com/RIKEN-RCCS/MilvusVisor][MilvusVisor]]
-  - クラウドコンピューティング
-    - IaaS クラウド
-      - ベアメタルクラウド
-    - 物理サーバー管理
-      - ライブマイグレーション
-      - ハードウェア保護
+  - コンピュータセキュリティ
+    - 機密 VM (Confidential VM)
+    - システムソフトウェアの脆弱性発見
+  - データセンタ管理技術
+    - クラウドにおけるベアメタルインスタンス管理技術
+    - ユーザーが管理者権限を利用可能な HPC システム
 
 * 学歴
   - 2018年9月 筑波大学 システム情報工学研究科 「博士(工学)」 取得 (筑波大学) (博乙第2892号)
@@ -46,7 +45,9 @@ English version is [[./profile_en.html][here]]
   - 2009年3月 徳島県立穴吹高等学校 卒業
 
 * 職歴
-- 2022年1月--現在: 産業技術総合研究所 デジタルアーキテクチャ研究センター 研究員
+- 2025年10月--現在: 産業技術総合研究所 インテリジェントプラットフォーム研究部門 主任研究員
+- 2025年3月--2025年9月: 産業技術総合研究所 インテリジェントプラットフォーム研究部門 研究員
+- 2022年1月--2025年3月: 産業技術総合研究所 デジタルアーキテクチャ研究センター 研究員
 - 2020年1月--2022年3月: 理化学研究所 計算科学研究センター 特別研究員
   - 高性能計算機 (HPC) 環境での機械学習の I/O 性能に関する研究に従事
 - 2018年4月--2019年12月: 日本アイ・ビー・エム株式会社 製品開発エンジニア
@@ -58,136 +59,298 @@ English version is [[./profile_en.html][here]]
 
 * 業績
 ** 論文誌
-   1. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.
+   1. Takahiro Hirofuchi, Akram Ben Ahmed, _Takaaki Fukai_.
+      *Implementation and Evaluation of a Time-Sensitive Networking Endpoint for Asynchronous Traffic Shaping.*
+      IEEE Access,
+      Feb. 2026.
+      (Open Access: https://ieeexplore.ieee.org/document/11372664)
+   2. Akram Ben Ahmed, Takahiro Hirofuchi, _Takaaki Fukai_.
+      *Hardware Design and Evaluation of an FPGA-Based Network Switch Supporting Asynchronous Traffic Shaping for Time Sensitive Networking.*
+      IEEE Access,
+      Aug. 2024.
+      (Open Access: https://ieeexplore.ieee.org/document/10658978)
+   3. _Takaaki Fukai_, Takahiro Shinagawa, Kazuhiko Kato.
       *Live Migration in Bare-metal Clouds.*
       IEEE Transactions on Cloud Computing,
       Jul 2018.
       (Open Access: https://ieeexplore.ieee.org/document/8401692)
 
 ** 国際会議
-   1. _Takaaki Fukai_, Kento Sato and Takahiro Hirofuchi.
+   1. Reima Ishii, _Takaaki Fukai_, Takahiro Shinagawa.
+      *NecoFuzz: Effective Fuzzing of Nested Virtualization via Fuzz-Harness Virtual Machines.*
+      In Proceedings of the 2026 European Conference on Computer Systems (EuroSys 2026).
+      (To appear)
+   2. Satoru Takekoshi, Manami Mori, _Takaaki Fukai_, Takahiro Shinagawa.
+      *BadAML: Exploiting Legacy Firmware Interfaces to Compromise Confidential Virtual Machines.*
+      Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS 2025),
+      Oct. 2025.
+      *[Distinguished Paper Award]*.
+   3. Akram Ben Ahmed, Takahiro Hirofuchi, _Takaaki Fukai_.
+      *EFCC: Ethernet Frame Crafter & Capture for TSN Research.*
+      2025 IEEE 50th Conference on Local Computer Networks (LCN),
+      Oct. 2025.
+   4. Itsuki Nakai, _Takaaki Fukai_, Takahiro Hirofuchi, Yukinori Sato.
+      *Comprehensive Performance Evaluation of Microservices on Confidential Containers in Mutli-access Edge Computing Environments.*
+      2025 IEEE International Conference on Cloud Engineering (IC2E),
+      Sep. 2025.
+   5. Akram BEN Ahmed, Takahiro Hirofuchi, _Takaaki Fukai_.
+      *FPGA-Based Network Switch Architecture Supporting Credit Based Shaper for Time Sensitive Networks.*
+      2024 IEEE 29th International Conference on Emerging Technologies and Factory Automation (ETFA),
+      Sep. 2024.
+   6. _Takaaki Fukai_, Kento Sato and Takahiro Hirofuchi.
       *Analyzing I/O Performance of a Hierarchical HPC Storage System for Distributed Deep Learning*
       In Proceedings of the 23rd International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT’22)
-      Dec 2022 (To be appear).
+      Dec 2022.
 
-   2. Tabuchi, Akihiro and Shirahata, Koichi and Yamazaki, Masafumi and Kasagi, Akihiko and Honda, Takumi and Kurihara, Kouji and Kawakami, Kentaro and Tabaru, Tsuguchika and Fukumoto, Naoto and Kuroda, Akiyoshi and _Fukai, Takaaki_ and Sato, Kento
+   7. Tabuchi, Akihiro and Shirahata, Koichi and Yamazaki, Masafumi and Kasagi, Akihiko and Honda, Takumi and Kurihara, Kouji and Kawakami, Kentaro and Tabaru, Tsuguchika and Fukumoto, Naoto and Kuroda, Akiyoshi and _Fukai, Takaaki_ and Sato, Kento
       *The 16,384-node Parallelism of 3D-CNN Training on An Arm CPU based Supercomputer*
       2021 IEEE 28th International Conference on High Performance Computing, Data, and Analytics (HiPC)
       Dec. 2021.
 
-   3. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.
+   8. Masanori Misono, Masahiro Ogino, _Takaaki Fukai_, Takahiro Shinagawa.
       *FaultVisor2: Testing Hypervisor Device Drivers against Real Hardware Failures.*
       In Proceedings of the 10th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2018),
       Dec. 2018. (Acceptance Ratio: 19.8%) *[Best paper award]*.
 
-   4. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.
+   9. Iori Yoneji, _Takaaki Fukai_, Takahiro Shinagawa and Kazuhiko Kato.
       *Unified Hardware Abstraction Layer with Device Masquerade.*
       In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018), 
       Apr. 2018 (To appear).
 
-   5. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.
+   10. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
+       *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.*
+       In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),
+       Dec. 2017.
+
+   11. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+       *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
+       In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), 
+       Dec. 2015.
+       *[Best paper award]*.
+
+** 国際ワークショップ
+   1. _Takaaki Fukai_, Manami Mori, Ryuichi Sakamoto, Takahiro Hirofuchi, Takuya Asaka.
+      *A Thin Hypervisor Approach to Multi-Tenant SmartNICs in Edge Data Centers.*
+      Proceedings of the 8th International Workshop on Edge Systems, Analytics and Networking,
+      Mar. 2025.
+   2. Farrell, Steven and Emani, Murali and Balma, Jacob and Drescher, Lukas and Drozd, Aleksandr and Fink, Andreas and Fox, Geoffrey and Kanter, David and Kurth, Thorsten and Mattson, Peter and Mu, Dawei and Ruhela, Amit and Sato, Kento and Shirahata, Koichi and Tabaru, Tsuguchika and Tsaris, Aristeidis and Balewski, Jan and Cumming, Ben and Danjo, Takumi and Domke, Jens and _Fukai, Takaaki_ and Fukumoto, Naoto and Fukushi, Tatsuya and Gerofi, Balazs and Honda, Takumi and Imamura, Toshiyuki and Kasagi, Akihiko and Kawakami, Kentaro and Kudo, Shuhei and Kuroda, Akiyoshi and Martinasso, Maxime and Matsuoka, Satoshi and Mendon\ccedil{}a, Henrique and Minami, Kazuki and Ram, Prabhat and Sawada, Takashi and Shankar, Mallikarjun and John, Tom St. and Tabuchi, Akihiro and Vishwanath, Venkatram and Wahib, Mohamed and Yamazaki, Masafumi and Yin, Junqi.
+      *MLPerf\trade{} HPC: A Holistic Benchmark Suite for Scientific Machine Learning on HPC Systems.*
+      2021 IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments (MLHPC).
+      November 2021.
+   3. Ilias Avramidis, Michael Mackay, Posco Tso, _Takaaki Fukai_, Takahiro Shinagawa.
       *Live Migration on ARM-based Micro-datacentres.*
       In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),
       Jan. 2018.
 
-   6. _Takaaki Fukai_, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.
-      *BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.*
-      In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),
-      Dec. 2017.
-
-   7. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
-      *OS-Independent Live Migration Scheme for Bare-metal Clouds.*
-      In Proceedings of the 8th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2015), 
-      Dec. 2015.
-      *[Best paper award]*.
-
-** 国際ワークショップ
-   1. Farrell, Steven and Emani, Murali and Balma, Jacob and Drescher, Lukas and Drozd, Aleksandr and Fink, Andreas and Fox, Geoffrey and Kanter, David and Kurth, Thorsten and Mattson, Peter and Mu, Dawei and Ruhela, Amit and Sato, Kento and Shirahata, Koichi and Tabaru, Tsuguchika and Tsaris, Aristeidis and Balewski, Jan and Cumming, Ben and Danjo, Takumi and Domke, Jens and _Fukai, Takaaki_ and Fukumoto, Naoto and Fukushi, Tatsuya and Gerofi, Balazs and Honda, Takumi and Imamura, Toshiyuki and Kasagi, Akihiko and Kawakami, Kentaro and Kudo, Shuhei and Kuroda, Akiyoshi and Martinasso, Maxime and Matsuoka, Satoshi and Mendon\ccedil{}a, Henrique and Minami, Kazuki and Ram, Prabhat and Sawada, Takashi and Shankar, Mallikarjun and John, Tom St. and Tabuchi, Akihiro and Vishwanath, Venkatram and Wahib, Mohamed and Yamazaki, Masafumi and Yin, Junqi.
-      *MLPerf\trade{} HPC: A Holistic Benchmark Suite for Scientific Machine Learning on HPC Systems.*
-      2021 IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments (MLHPC).
-      November 2021.
-      
 ** 国内研究会
 
-  1. 森 真誠(†), _深井 貴明_, 山本 啓二, 広渕 崇宏, 朝香 卓也．
-     *Root権限使用可能なArmスパコン実現に向けた軽量ハイパバイザの設計と実装．*
-     第157回 システムソフトウェアとオペレーティング・システム研究会．
-     2022年9月．
-     †: *最優秀若手発表賞 受賞*
+   1. 大野 健太朗, 宮島 敬明, _深井 貴明_ ．
+      *異種Armプロセッサにおける軽量ハイパバイザによる性能への影響の比較と分析．*
+      第169回 システムソフトウェアとオペレーティング・システム研究会．
+      2025年9月．
+   2. 広渕 崇宏, アクラム ベン アーメッド, _深井 貴明_.
+      *Asynchronous Traffic Shaping (ATS)に対応したTime-sensitive network (TSN)エンドポイントの試作*
+      電子情報通信学会 信学技報, vol. 124, no. 438, CPSY2024-58, pp. 79-84.
+      2025年3月.
+   3. 宮川 大輝, _深井 貴明_, 李 彦志, 広渕 崇宏, 菅谷 みどり．
+      *ベアメタル環境におけるSmartNICを用いたOSイメージ展開手法の設計と実装．*
+      第166回 システムソフトウェアとオペレーティング・システム研究会．
+      2025年3月．
+   4. Akram Ben Ahmed, Takahiro Hirofuchi, _Takaaki Fukai_.
+      *Preliminary Report on an FPGA-based Prototype of a Network Switch Supporting Asynchronous Traffic Shaping for Time Sensitive Networking*
+      電子情報通信学会 信学技報, vol. 124, no. 74, RECONF2024-5, pp. 23-29.
+      2024年6月.
+   5. 飯田 圭祐(†), _深井 貴明_, 広渕 崇宏, 松谷 健史．
+      *軽量ハイパバイザのSR-IOVデバイス制御における性能劣化削減手法．*
+      第163回 システムソフトウェアとオペレーティング・システム研究会．
+      2024年5月．
+      †: *Outstanding Presentation Award*
+   6. 相馬 大地, 石黒 健太, _深井 貴明_, 広渕 崇宏, 河野 健二．
+      *資源集約時における低遅延通信のためのSmartNICを活用したスケジューリング支援．*
+      第163回 システムソフトウェアとオペレーティング・システム研究会．
+      2024年5月．
+   7. Akram Ben Ahmed, Takahiro Hirofuchi, _Takaaki Fukai_.
+      *Implementation and Preliminary Evaluation of an FPGA-based Network Switch Supporting Credit-based Shaper for Time Sensitive Networks.*
+      電子情報通信学会 信学技報, vol. 124, no. 2, NS2024-11, pp. 47-52.
+      2024年4月.
+   8. 中井 樹, _深井 貴明_, 広渕 崇宏, 佐藤 幸紀．
+      *メモリ暗号化されたクラウドシステム基盤の性能評価．*
+      電子情報通信学会 信学技報, vol. 123, no. 450, CPSY2023-50, pp. 71-76．
+      (組込み技術とネットワークに関するワークショップ ETNET2024)
+      2024年3月．
+   9. 森 真誠, _深井 貴明_, 広渕 崇宏, 朝香 卓也．
+      *I/Oデバイス内部の汎用プロセッサにおける軽量な隔離実行環境．*
+      第162回 システムソフトウェアとオペレーティング・システム研究会．
+      2024年2月．
+   10. 石井 玲真(†), _深井 貴明_, 品川 高廣．
+       *ネステッド仮想化のファジングにおけるカバレッジ向上に向けて．*
+       第159回 システムソフトウェアとオペレーティング・システム研究会．
+       2023年5月．
+       †: *Outstanding Presentation Award*
+   11. 葛野 弘樹, _深井 貴明_ ．
+       *新規仮想化ソフトウェアのセキュア実装に向けた既存実装の脆弱性分類の検討．*
+       情報処理学会 第85回全国大会講演論文集，
+       2023年2月．
+   12. 森 真誠(†), _深井 貴明_, 山本 啓二, 広渕 崇宏, 朝香 卓也．
+       *Root権限使用可能なArmスパコン実現に向けた軽量ハイパバイザの設計と実装．*
+       第157回 システムソフトウェアとオペレーティング・システム研究会．
+       2022年9月．
+       †: *最優秀若手発表賞 受賞*
 
-  2. 長塚 向紀, _深井 貴明_, 山本 啓二, 宮島 敬明, 広渕 崇宏． 
-     *Armプロセッサにおける軽量ハイパバイザの性能評価．*
-     第157回 システムソフトウェアとオペレーティング・システム研究会．
-     2022年9月．
+   13. 長塚 向紀, _深井 貴明_, 山本 啓二, 宮島 敬明, 広渕 崇宏． 
+       *Armプロセッサにおける軽量ハイパバイザの性能評価．*
+       第157回 システムソフトウェアとオペレーティング・システム研究会．
+       2022年9月．
 
-  3. _深井 貴明_, 広渕 崇宏, 高野 了成, Akram Ben Ahmed, 佐藤 賢斗．
-     *FPGAによる次世代メモリのエミュレーション機構．*
-     第180回 ハイパフォーマンスコンピューティング研究発表会 (SWoPP2021)
-     2021年7月．
+   14. _深井 貴明_, 広渕 崇宏, 高野 了成, Akram Ben Ahmed, 佐藤 賢斗．
+       *FPGAによる次世代メモリのエミュレーション機構．*
+       第180回 ハイパフォーマンスコンピューティング研究発表会 (SWoPP2021)
+       2021年7月．
 
-  4. 荻野 将拓, 味曽野 雅史, _深井 貴明_, 品川 高廣．
-     *ハードウェア障害に対するハイパーバイザの対故障性検証．*
-     第143回 システムソフトウェアとオペレーティング・システム研究会．
-     2018年5月．
+   15. 荻野 将拓, 味曽野 雅史, _深井 貴明_, 品川 高廣．
+       *ハードウェア障害に対するハイパーバイザの対故障性検証．*
+       第143回 システムソフトウェアとオペレーティング・システム研究会．
+       2018年5月．
 
-  5. 東 耕平, 竹腰 開, _深井 貴明_, 品川 高廣, 加藤 和彦
-    *ベアメタルクラウドにおけるハードウェア保護．*
-    第136回 システムソフトウェアとオペレーティング・システム研究会．
-    2016年2月．
+   16. 東 耕平, 竹腰 開, _深井 貴明_, 品川 高廣, 加藤 和彦
+      *ベアメタルクラウドにおけるハードウェア保護．*
+      第136回 システムソフトウェアとオペレーティング・システム研究会．
+      2016年2月．
 
-  6. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
-    *物理マシン間のライブマイグレーション手法の提案．*
-    第127回 システムソフトウェアとオペレーティング・システム研究会．
-    2013年12月．
-   [[./files/OS127-fukai.pdf][PDF]] [[./ipsjnotice.html][ここに掲載した著作物の利用に関する注意]]
+   17. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦．
+      *物理マシン間のライブマイグレーション手法の提案．*
+      第127回 システムソフトウェアとオペレーティング・システム研究会．
+      2013年12月．
+     [[./files/OS127-fukai.pdf][PDF]] [[./ipsjnotice.html][ここに掲載した著作物の利用に関する注意]]
 
 ** 国際ポスタ発表
-   1. _Takaaki Fukai_ and Kento Sato.
+   1. Yoshifumi Shu, _Takaaki Fukai_, Takahiro Shinagawa.
+      *Coverage-Based Debloating of Linux Kernel Configurations for Real Machine Environments.*
+      The 31st Symposium on Operating Systems Principles (SOSP 2025).
+      Oct. 2025.
+
+   2. _Takaaki Fukai_, Manami Mori, Keiji Yamamoto, Takahiro Hirofuchi, Takuya Asaka.
+      *Toward Providing Root Privilege to Flagship HPC Users with Thin-Hypervisor.*
+      2024 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops),
+      Sep. 2024.
+
+   3. Itsuki Nakai, _Takaaki Fukai_, Takahiro Hirofuchi, Yukinori Sato.
+      *Performance Evaluation of Confidential Containers in the Edge-Cloud Computing Continuum.*
+      15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).
+      Sep. 2024.
+
+   4. Taiki Miyakawa, _Takaaki Fukai_, Li Yanzhi, Takahiro Hirofuchi, Midori Sugaya.
+      *Toward Optimizing OS Image Deployment Using SmartNIC.*
+      15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).
+      Sep. 2024.
+
+   5. Manami Mori, _Takaaki Fukai_, Ryuichi Sakamoto, Takahiro Hirofuchi, Takuya Asaka.
+      *A lightweight isolated execution environment in SmartNIC.*
+      15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).
+      Sep. 2024.
+
+   6. Keisuke Iida, _Takaaki Fukai_, Takahiro Hirofuchi, Takeshi Matsuya.
+      *Design of SR-IOV Driver to Mitigate Performance Degradation for Lightweight Hypervisor.*
+      15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).
+      Sep. 2024.
+
+   7. Reima Ishii, _Takaaki Fukai_, Takahiro Shinagawa.
+      *Toward Efficient Fuzzing of Nested Virtualization.*
+      17th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2023).
+      Jul. 2023.
+
+   8. _Takaaki Fukai_ and Kento Sato.
       *Measurement of I/O Performance on a Hierarchical File System for Distributed Deep Neural Network.*
       The 4th R-CCS International symposium
       February, 2022.
 
-   2. _Takaaki Fukai_ and Kento Sato.
+   9. _Takaaki Fukai_ and Kento Sato.
       *Performance Measurement of a Hierarchical File System for Distributed Deep Neural Network Training.*
       The International Conference on High Performance Computing in Asia-Pacific Region (HPC Asia 2022)
       January, 2022.
 
-   3. _Takaaki Fukai_ and Kento Sato.
-      *Measurement of I/O performance for distributed deep neural networks on Fugaku*.
-      The 3rd R-CCS International Symposium 2021.
-      February, 2021.
+   10. _Takaaki Fukai_ and Kento Sato.
+       *Measurement of I/O performance for distributed deep neural networks on Fugaku*.
+       The 3rd R-CCS International Symposium 2021.
+       February, 2021.
 
-   4. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.
-      *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.
-      The Fifteenth EuroSys Conference 2020 (EuroSys ’20).
-      April, 2020.
+   11. Ryosuke Yasuoka, _Takaaki Fukai_ and Takahiro Shinagawa.
+       *Toward On-demand Nested Virtualization for Live-Refreshing Cloud Systems*.
+       The Fifteenth EuroSys Conference 2020 (EuroSys ’20).
+       April, 2020.
 
-   5. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
-     *Live Migration of Bare-metal Instances*
-     5th Asia-Pacific Workshop on Systems (APSys 2014).
-     June, 2014
+   12. _Takaaki Fukai_, Yushi Omote, Takahiro Shinagawa, and Kazuhiko Kato.
+      *Live Migration of Bare-metal Instances*
+      5th Asia-Pacific Workshop on Systems (APSys 2014).
+      June, 2014
 
 ** 国内ポスタ発表
-
-  1. 葛野弘樹， _深井貴明_.
+  1. 藤井 大悟, 広渕 崇宏, _深井 貴明_ ．
+     *ハードウェアフレームジェネレータを用いたLinuxサーバのレイテンシ分析．*
+     第37回コンピュータシステム・シンポジウム (ComSys 2025).
+     2025年12月.
+  2. 大野 健太朗, 宮島 敬明, _深井 貴明_ ．
+     *異種Armプロセッサにおける軽量ハイパバイザによる性能劣化特性の比較．*
+     xSIG 2024．
+     2024年8月．
+  3. 広渕 崇宏, Akram Ben Ahmed, _深井 貴明_, 加藤 丈治, 高野 了成．
+     *ポスト5Gを支える時間確定的なコンピューティング基盤技術の開発にむけて．*
+     xSIG 2024．
+     2024年8月．
+  4. Akram BEN AHMED, Takahiro HIROFUCHI, _Takaaki FUKAI_.
+     *Towards Open-source FPGA-based hardware support for Time Sensitive Networks.*
+     xSIG 2024．
+     2024年8月．
+  5. Akram BEN AHMED, Takahiro HIROFUCHI, _Takaaki FUKAI_.
+     *A work-in-progress report on FPGA-based hardware support of Credit Based Shaping for Time Sensitive Networks.*
+     第248回システム・アーキテクチャ・第205回システムとLSIの設計技術・第65回組込みシステム合同研究発表会（ETNET2024）．
+     2024年3月．
+  6. 中井 樹, _深井 貴明_, 広渕 崇宏, 佐藤 幸紀．
+     *メモリ暗号化されたクラウドシステム基盤の性能評価．*
+     第248回システム・アーキテクチャ・第205回システムとLSIの設計技術・第65回組込みシステム合同研究発表会（ETNET2024）．
+     2024年3月．
+  7. 宮川 大輝, _深井 貴明_, 李 彦志, 広渕 崇宏, 菅谷みどり．
+     *I/O処理オフロードに向けたSmartNICとCPUのネットワーク性能特性の比較．*
+     第35回コンピュータシステム・シンポジウム (ComSys 2023).
+     2023年12月.
+  8. 葛野弘樹， _深井貴明_.
     *仮想化ソフトウェアのセキュア化に向けた脆弱性の調査分析.*
     第34回コンピュータシステム・シンポジウム (ComSys 2022).
     2022年12月.
 
-  2. 安岡 亮輔， _深井 貴明_ ，品川 高廣， 加藤 和彦.
+  9. 安岡 亮輔， _深井 貴明_ ，品川 高廣， 加藤 和彦.
     *ネステッド仮想化の動的 ON/OFF による仮想マシンモニタ若化.*
     第28回コンピュータシステム・シンポジウム (ComSys 2016).
     2016年11月.
 
-  3. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦.
-    *物理マシン間のライブマイグレーション手法の提案.*
-    第11回 ディペンダブルシステムワークショップ (DSW 2013).
-    2013年12月.
+  10. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦.
+     *物理マシン間のライブマイグレーション手法の提案.*
+     第11回 ディペンダブルシステムワークショップ (DSW 2013).
+     2013年12月.
 
-  4. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦.
-    *物理マシン間のライブマイグレーション手法の提案.*
-    第25回コンピュータシステム・シンポジウム (ComSys 2013).
-    2013年12月.
+  11. _深井 貴明_ ，表 祐志，品川 高廣，加藤 和彦.
+     *物理マシン間のライブマイグレーション手法の提案.*
+     第25回コンピュータシステム・シンポジウム (ComSys 2013).
+     2013年12月.
+
+** 招待講演
+   1. _深井 貴明_ ．
+      クラウド、HPC、エッジにおける軽量ハイパバイザの研究
+      第158回システムソフトウェアとオペレーティング・システム研究会 若手招待講演．
+      2023年2月
+
+** その他国際発表
+   1. Satoru Takekoshi, Manami Mori, _Takaaki Fukai_, Takahiro Shinagawa.
+      AML Injection Attacks on Confidential VMs
+      BlackHat EU 2024.
+      Dec. 2024.
+      https://blackhat.com/eu-24/briefings/schedule/#aml-injection-attacks-on-confidential-vms-42723
+
+** その他国内発表
+   1.  _深井 貴明_
+      トップカンファレンス・ジャーナル採択論文講演
+      (採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)
+      第31回コンピュータシステム・シンポジウム (ComSys2019）
 
 ** 学位論文
    - _深井貴明_
@@ -203,23 +366,20 @@ English version is [[./profile_en.html][here]]
      岡山大学工学部情報工学科 卒業研究報告書
      2013年3月
 
-** その他国内発表
-   1.  _深井 貴明_
-      トップカンファレンス・ジャーナル採択論文講演
-      (採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)
-      第31回コンピュータシステム・シンポジウム (ComSys2019）
-
 * 受賞歴
-  1. *IEEE Computer Society Japan Chapter Young Author Award 2019*
+  1. *Distinguished Paper Award*
+     ACM SIGSAC Conference on Computer and Communications Security (CCS 2025)
+
+  2. *IEEE Computer Society Japan Chapter Young Author Award 2019*
      IEEE Computer Society Tokyo/Japan Joint Chapter, 2019年12月
 
-  2. *Best Paper Award*
+  3. *Best Paper Award*
      The 10th IEEE International Conference on Cloud Computing Technology and Science, December 2018
 
-  3. *Best Paper Award*
+  4. *Best Paper Award*
     The 8th IEEE/ACM International Conference on Utility and Cloud Computing, December 2015
 
-  4. *岡山大学工学部優秀学生賞*
+  5. *岡山大学工学部優秀学生賞*
      岡山大学工学部 2013年3月
 
 * 研究資金獲得歴
@@ -227,11 +387,16 @@ English version is [[./profile_en.html][here]]
 - 2021年度--2024年度 日本学術振興会 科学研究費助成事業(科研費) 若手研究　「共用 HPC における管理者権限の利用を許す計算資源提供」
 * 学会活動
 ** 編集委員
-- 情報処理学会論文誌：コンピューティングシステム 編集委員 (2020年4月--現在)
+- 情報処理学会論文誌：コンピューティングシステム 編集委員 (2025年4月--現在)
+- 情報処理学会 会誌編集委員会 専門委員会 システム分野 委員 (2022年4月--2026年3月)
+- 情報処理学会論文誌：コンピューティングシステム 編集委員 (2020年4月--2024年3月)
+
 ** 運営委員
-- 情報処理学会 システムソフトウェアとオペレーティングシステム研究会 委員 (2020年4月--現在)
+- 情報処理学会 システムソフトウェアとオペレーティングシステム研究会 幹事 (2024年4月--現在)
+- 情報処理学会 システムソフトウェアとオペレーティングシステム研究会 委員 (2020年4月--2024年3月)
 ** その他
-- The 3rd R-CCS International Symposium 2021. Online arrangement chair.
+- Sponsor Chair. 15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).
+- Online arrangement chair. The 3rd R-CCS International Symposium 2021.
 
 * その他学外活動
   - ResearchGate :: https://www.researchgate.net/profile/Takaaki_Fukai
@@ -241,6 +406,8 @@ English version is [[./profile_en.html][here]]
   - Bitbucket :: https://bitbucket.org/ftakaaki/
 
 * 更新履歴
+
+  - 2026/03/09 /所属/, /業績/, /学会活動/, /職歴/ の更新
   - 2022/12/29 /所属/, /連絡先/, /職歴/, /業績/ の更新
   - 2021/09/10 /研究資金獲得歴/, /学会活動/ を追加, /業績/, /職歴/ の更新
   - 2020/04/07 /業績/ の更新

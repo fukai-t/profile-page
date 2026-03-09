@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="jp" xml:lang="jp">
 <head>
-<!-- 2022-12-29 Thu 17:17 -->
+<!-- 2026-03-09 Mon 21:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>深井貴明(Takaaki FUKAI)</title>
+<meta name="generator" content="Org mode" />
 <meta name="author" content="深井貴明" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,51 +190,94 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">深井貴明(Takaaki FUKAI)</h1>
-<div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#org1fb9223">所属</a></li>
-<li><a href="#org6ed0a02">連絡先</a></li>
-<li><a href="#orgae07374">研究分野</a></li>
-<li><a href="#org63afffa">学歴</a></li>
-<li><a href="#org58e8486">職歴</a></li>
-<li><a href="#org1a515fc">業績</a></li>
-<li><a href="#org1f25892">受賞歴</a></li>
-<li><a href="#orgeb65ad1">研究資金獲得歴</a></li>
-<li><a href="#orgaa7f244">学会活動</a></li>
-<li><a href="#orgc0ddd9d">その他学外活動</a></li>
-<li><a href="#orge4fed31">更新履歴</a></li>
+<li><a href="#org2138542">所属</a></li>
+<li><a href="#org64f5744">連絡先</a></li>
+<li><a href="#orge9ca9b7">研究分野</a></li>
+<li><a href="#orgfbc5cdf">学歴</a></li>
+<li><a href="#org50ddfaf">職歴</a></li>
+<li><a href="#orgd89bc34">業績</a></li>
+<li><a href="#orgc918bdb">受賞歴</a></li>
+<li><a href="#orge8b5ba5">研究資金獲得歴</a></li>
+<li><a href="#orgb81a2b2">学会活動</a></li>
+<li><a href="#org3b9852c">その他学外活動</a></li>
+<li><a href="#orga72eae0">更新履歴</a></li>
 </ul>
 </div>
 </div>
 <p>
 English version is <a href="./profile_en.html">here</a><br />
 </p>
-<div id="outline-container-org1fb9223" class="outline-2">
-<h2 id="org1fb9223">所属</h2>
-<div class="outline-text-2" id="text-org1fb9223">
+<div id="outline-container-org2138542" class="outline-2">
+<h2 id="org2138542">所属</h2>
+<div class="outline-text-2" id="text-org2138542">
 <ul class="org-ul">
-<li><a href="https://www.digiarc.aist.go.jp/team/ccirt/">国立研究開発法人 産業技術総合研究所 デジタルアーキテクチャ研究センター 超分散コンピューティング研究チーム </a><br />
-<ul class="org-ul">
-<li><a href="https://www.digiarc.aist.go.jp/recruit/">採用情報</a><br /></li>
-<li><a href="https://unit.aist.go.jp/hrd/keiyaku_koubo/2022-digiarc_0016.html#ttl">公募 (研究員)</a><br /></li>
-<li><a href="https://unit.aist.go.jp/hrd/keiyaku_koubo/2022-digiarc_0015.html#ttl">公募 (契約職員, 学生含む)</a><br /></li>
-</ul></li>
+<li><a href="https://www.ipri.aist.go.jp/">国立研究開発法人 産業技術総合研究所 インテリジェントプラットフォーム研究部門</a><br /></li>
+<li>主任研究員<br /></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6ed0a02" class="outline-2">
-<h2 id="org6ed0a02">連絡先</h2>
-<div class="outline-text-2" id="text-org6ed0a02">
+<div id="outline-container-org64f5744" class="outline-2">
+<h2 id="org64f5744">連絡先</h2>
+<div class="outline-text-2" id="text-org64f5744">
 <dl class="org-dl">
 <dt>メールアドレス</dt><dd>takaaki.fukai (at) aist.go.jp<br /></dd>
 <dt>住所</dt><dd>〒135-0064 東京都江東区青海2-3-26<br /></dd>
@@ -243,34 +285,32 @@ English version is <a href="./profile_en.html">here</a><br />
 </div>
 </div>
 
-<div id="outline-container-orgae07374" class="outline-2">
-<h2 id="orgae07374">研究分野</h2>
-<div class="outline-text-2" id="text-orgae07374">
+<div id="outline-container-orge9ca9b7" class="outline-2">
+<h2 id="orge9ca9b7">研究分野</h2>
+<div class="outline-text-2" id="text-orge9ca9b7">
 <ul class="org-ul">
-<li>OS カーネル / ハイパバイザ<br />
+<li>軽量ハイパバイザ<br />
 <ul class="org-ul">
 <li><a href="https://www.bitvisor.org/">BitVisor</a><br /></li>
 <li><a href="https://github.com/RIKEN-RCCS/MilvusVisor">MilvusVisor</a><br /></li>
 </ul></li>
-<li>クラウドコンピューティング<br />
+<li>コンピュータセキュリティ<br />
 <ul class="org-ul">
-<li>IaaS クラウド<br />
-<ul class="org-ul">
-<li>ベアメタルクラウド<br /></li>
+<li>機密 VM (Confidential VM)<br /></li>
+<li>システムソフトウェアの脆弱性発見<br /></li>
 </ul></li>
-<li>物理サーバー管理<br />
+<li>データセンタ管理技術<br />
 <ul class="org-ul">
-<li>ライブマイグレーション<br /></li>
-<li>ハードウェア保護<br /></li>
-</ul></li>
+<li>クラウドにおけるベアメタルインスタンス管理技術<br /></li>
+<li>ユーザーが管理者権限を利用可能な HPC システム<br /></li>
 </ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org63afffa" class="outline-2">
-<h2 id="org63afffa">学歴</h2>
-<div class="outline-text-2" id="text-org63afffa">
+<div id="outline-container-orgfbc5cdf" class="outline-2">
+<h2 id="orgfbc5cdf">学歴</h2>
+<div class="outline-text-2" id="text-orgfbc5cdf">
 <ul class="org-ul">
 <li>2018年9月 筑波大学 システム情報工学研究科 「博士(工学)」 取得 (筑波大学) (博乙第2892号)<br /></li>
 <li>2018年3月 筑波大学大学院 博士後期課程システム情報工学研究科 コンピュータサイエンス専攻 退学<br /></li>
@@ -284,11 +324,13 @@ English version is <a href="./profile_en.html">here</a><br />
 </div>
 </div>
 
-<div id="outline-container-org58e8486" class="outline-2">
-<h2 id="org58e8486">職歴</h2>
-<div class="outline-text-2" id="text-org58e8486">
+<div id="outline-container-org50ddfaf" class="outline-2">
+<h2 id="org50ddfaf">職歴</h2>
+<div class="outline-text-2" id="text-org50ddfaf">
 <ul class="org-ul">
-<li>2022年1月&#x2013;現在: 産業技術総合研究所 デジタルアーキテクチャ研究センター 研究員<br /></li>
+<li>2025年10月&#x2013;現在: 産業技術総合研究所 インテリジェントプラットフォーム研究部門 主任研究員<br /></li>
+<li>2025年3月&#x2013;2025年9月: 産業技術総合研究所 インテリジェントプラットフォーム研究部門 研究員<br /></li>
+<li>2022年1月&#x2013;2025年3月: 産業技術総合研究所 デジタルアーキテクチャ研究センター 研究員<br /></li>
 <li>2020年1月&#x2013;2022年3月: 理化学研究所 計算科学研究センター 特別研究員<br />
 <ul class="org-ul">
 <li>高性能計算機 (HPC) 環境での機械学習の I/O 性能に関する研究に従事<br /></li>
@@ -302,14 +344,24 @@ English version is <a href="./profile_en.html">here</a><br />
 </div>
 </div>
 
-<div id="outline-container-org1a515fc" class="outline-2">
-<h2 id="org1a515fc">業績</h2>
-<div class="outline-text-2" id="text-org1a515fc">
+<div id="outline-container-orgd89bc34" class="outline-2">
+<h2 id="orgd89bc34">業績</h2>
+<div class="outline-text-2" id="text-orgd89bc34">
 </div>
 <ul class="org-ul">
-<li><a id="orgea869ed"></a>論文誌<br />
-<div class="outline-text-3" id="text-orgea869ed">
+<li><a id="orgef9e315"></a>論文誌<br />
+<div class="outline-text-3" id="text-orgef9e315">
 <ol class="org-ol">
+<li>Takahiro Hirofuchi, Akram Ben Ahmed, <span class="underline">Takaaki Fukai</span>.<br />
+<b>Implementation and Evaluation of a Time-Sensitive Networking Endpoint for Asynchronous Traffic Shaping.</b><br />
+IEEE Access,<br />
+Feb. 2026.<br />
+(Open Access: <a href="https://ieeexplore.ieee.org/document/11372664">https://ieeexplore.ieee.org/document/11372664</a>)<br /></li>
+<li>Akram Ben Ahmed, Takahiro Hirofuchi, <span class="underline">Takaaki Fukai</span>.<br />
+<b>Hardware Design and Evaluation of an FPGA-Based Network Switch Supporting Asynchronous Traffic Shaping for Time Sensitive Networking.</b><br />
+IEEE Access,<br />
+Aug. 2024.<br />
+(Open Access: <a href="https://ieeexplore.ieee.org/document/10658978">https://ieeexplore.ieee.org/document/10658978</a>)<br /></li>
 <li><span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa, Kazuhiko Kato.<br />
 <b>Live Migration in Bare-metal Clouds.</b><br />
 IEEE Transactions on Cloud Computing,<br />
@@ -319,13 +371,34 @@ Jul 2018.<br />
 </div>
 </li>
 
-<li><a id="org050d15a"></a>国際会議<br />
-<div class="outline-text-3" id="text-org050d15a">
+<li><a id="orgdad35b4"></a>国際会議<br />
+<div class="outline-text-3" id="text-orgdad35b4">
 <ol class="org-ol">
+<li>Reima Ishii, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>NecoFuzz: Effective Fuzzing of Nested Virtualization via Fuzz-Harness Virtual Machines.</b><br />
+In Proceedings of the 2026 European Conference on Computer Systems (EuroSys 2026).<br />
+(To appear)<br /></li>
+<li>Satoru Takekoshi, Manami Mori, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>BadAML: Exploiting Legacy Firmware Interfaces to Compromise Confidential Virtual Machines.</b><br />
+Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS 2025),<br />
+Oct. 2025.<br />
+<b>[Distinguished Paper Award]</b>.<br /></li>
+<li>Akram Ben Ahmed, Takahiro Hirofuchi, <span class="underline">Takaaki Fukai</span>.<br />
+<b>EFCC: Ethernet Frame Crafter &amp; Capture for TSN Research.</b><br />
+2025 IEEE 50th Conference on Local Computer Networks (LCN),<br />
+Oct. 2025.<br /></li>
+<li>Itsuki Nakai, <span class="underline">Takaaki Fukai</span>, Takahiro Hirofuchi, Yukinori Sato.<br />
+<b>Comprehensive Performance Evaluation of Microservices on Confidential Containers in Mutli-access Edge Computing Environments.</b><br />
+2025 IEEE International Conference on Cloud Engineering (IC2E),<br />
+Sep. 2025.<br /></li>
+<li>Akram BEN Ahmed, Takahiro Hirofuchi, <span class="underline">Takaaki Fukai</span>.<br />
+<b>FPGA-Based Network Switch Architecture Supporting Credit Based Shaper for Time Sensitive Networks.</b><br />
+2024 IEEE 29th International Conference on Emerging Technologies and Factory Automation (ETFA),<br />
+Sep. 2024.<br /></li>
 <li><span class="underline">Takaaki Fukai</span>, Kento Sato and Takahiro Hirofuchi.<br />
 <b>Analyzing I/O Performance of a Hierarchical HPC Storage System for Distributed Deep Learning</b><br />
 In Proceedings of the 23rd International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT’22)<br />
-Dec 2022 (To be appear).<br /></li>
+Dec 2022.<br /></li>
 
 <li>Tabuchi, Akihiro and Shirahata, Koichi and Yamazaki, Masafumi and Kasagi, Akihiko and Honda, Takumi and Kurihara, Kouji and Kawakami, Kentaro and Tabaru, Tsuguchika and Fukumoto, Naoto and Kuroda, Akiyoshi and <span class="underline">Fukai, Takaaki</span> and Sato, Kento<br />
 <b>The 16,384-node Parallelism of 3D-CNN Training on An Arm CPU based Supercomputer</b><br />
@@ -342,11 +415,6 @@ Dec. 2018. (Acceptance Ratio: 19.8%) <b>[Best paper award]</b>.<br /></li>
 In Proceedings of the 33rd ACM Symposium On Applied Computing (ACM SAC 2018),<br />
 Apr. 2018 (To appear).<br /></li>
 
-<li>Ilias Avramidis, Michael Mackay, Posco Tso, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
-<b>Live Migration on ARM-based Micro-datacentres.</b><br />
-In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),<br />
-Jan. 2018.<br /></li>
-
 <li><span class="underline">Takaaki Fukai</span>, Satoru Takekoshi, Kohei Azuma, Takahiro Shinagawa and Kazuhiko Kato.<br />
 <b>BMCArmor: A Hardware Protection Scheme for Bare-Metal Clouds.</b><br />
 In Proceedings of the 9th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2017),<br />
@@ -361,20 +429,75 @@ Dec. 2015.<br />
 </div>
 </li>
 
-<li><a id="org3cac1a4"></a>国際ワークショップ<br />
-<div class="outline-text-3" id="text-org3cac1a4">
+<li><a id="org9a13c6d"></a>国際ワークショップ<br />
+<div class="outline-text-3" id="text-org9a13c6d">
 <ol class="org-ol">
+<li><span class="underline">Takaaki Fukai</span>, Manami Mori, Ryuichi Sakamoto, Takahiro Hirofuchi, Takuya Asaka.<br />
+<b>A Thin Hypervisor Approach to Multi-Tenant SmartNICs in Edge Data Centers.</b><br />
+Proceedings of the 8th International Workshop on Edge Systems, Analytics and Networking,<br />
+Mar. 2025.<br /></li>
 <li>Farrell, Steven and Emani, Murali and Balma, Jacob and Drescher, Lukas and Drozd, Aleksandr and Fink, Andreas and Fox, Geoffrey and Kanter, David and Kurth, Thorsten and Mattson, Peter and Mu, Dawei and Ruhela, Amit and Sato, Kento and Shirahata, Koichi and Tabaru, Tsuguchika and Tsaris, Aristeidis and Balewski, Jan and Cumming, Ben and Danjo, Takumi and Domke, Jens and <span class="underline">Fukai, Takaaki</span> and Fukumoto, Naoto and Fukushi, Tatsuya and Gerofi, Balazs and Honda, Takumi and Imamura, Toshiyuki and Kasagi, Akihiko and Kawakami, Kentaro and Kudo, Shuhei and Kuroda, Akiyoshi and Martinasso, Maxime and Matsuoka, Satoshi and Mendon&ccedil;a, Henrique and Minami, Kazuki and Ram, Prabhat and Sawada, Takashi and Shankar, Mallikarjun and John, Tom St. and Tabuchi, Akihiro and Vishwanath, Venkatram and Wahib, Mohamed and Yamazaki, Masafumi and Yin, Junqi.<br />
 <b>MLPerf&trade; HPC: A Holistic Benchmark Suite for Scientific Machine Learning on HPC Systems.</b><br />
 2021 IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments (MLHPC).<br />
 November 2021.<br /></li>
+<li>Ilias Avramidis, Michael Mackay, Posco Tso, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>Live Migration on ARM-based Micro-datacentres.</b><br />
+In Proceedings of the 3rd Workshop on Edge Computing (EdgeCom 2018),<br />
+Jan. 2018.<br /></li>
 </ol>
 </div>
 </li>
 
-<li><a id="org8982ab1"></a>国内研究会<br />
-<div class="outline-text-3" id="text-org8982ab1">
+<li><a id="orgbcc6ffc"></a>国内研究会<br />
+<div class="outline-text-3" id="text-orgbcc6ffc">
 <ol class="org-ol">
+<li>大野 健太朗, 宮島 敬明, <span class="underline">深井 貴明</span> ．<br />
+<b>異種Armプロセッサにおける軽量ハイパバイザによる性能への影響の比較と分析．</b><br />
+第169回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2025年9月．<br /></li>
+<li>広渕 崇宏, アクラム ベン アーメッド, <span class="underline">深井 貴明</span>.<br />
+<b>Asynchronous Traffic Shaping (ATS)に対応したTime-sensitive network (TSN)エンドポイントの試作</b><br />
+電子情報通信学会 信学技報, vol. 124, no. 438, CPSY2024-58, pp. 79-84.<br />
+2025年3月.<br /></li>
+<li>宮川 大輝, <span class="underline">深井 貴明</span>, 李 彦志, 広渕 崇宏, 菅谷 みどり．<br />
+<b>ベアメタル環境におけるSmartNICを用いたOSイメージ展開手法の設計と実装．</b><br />
+第166回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2025年3月．<br /></li>
+<li>Akram Ben Ahmed, Takahiro Hirofuchi, <span class="underline">Takaaki Fukai</span>.<br />
+<b>Preliminary Report on an FPGA-based Prototype of a Network Switch Supporting Asynchronous Traffic Shaping for Time Sensitive Networking</b><br />
+電子情報通信学会 信学技報, vol. 124, no. 74, RECONF2024-5, pp. 23-29.<br />
+2024年6月.<br /></li>
+<li>飯田 圭祐(†), <span class="underline">深井 貴明</span>, 広渕 崇宏, 松谷 健史．<br />
+<b>軽量ハイパバイザのSR-IOVデバイス制御における性能劣化削減手法．</b><br />
+第163回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2024年5月．<br />
+†: <b>Outstanding Presentation Award</b><br /></li>
+<li>相馬 大地, 石黒 健太, <span class="underline">深井 貴明</span>, 広渕 崇宏, 河野 健二．<br />
+<b>資源集約時における低遅延通信のためのSmartNICを活用したスケジューリング支援．</b><br />
+第163回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2024年5月．<br /></li>
+<li>Akram Ben Ahmed, Takahiro Hirofuchi, <span class="underline">Takaaki Fukai</span>.<br />
+<b>Implementation and Preliminary Evaluation of an FPGA-based Network Switch Supporting Credit-based Shaper for Time Sensitive Networks.</b><br />
+電子情報通信学会 信学技報, vol. 124, no. 2, NS2024-11, pp. 47-52.<br />
+2024年4月.<br /></li>
+<li>中井 樹, <span class="underline">深井 貴明</span>, 広渕 崇宏, 佐藤 幸紀．<br />
+<b>メモリ暗号化されたクラウドシステム基盤の性能評価．</b><br />
+電子情報通信学会 信学技報, vol. 123, no. 450, CPSY2023-50, pp. 71-76．<br />
+(組込み技術とネットワークに関するワークショップ ETNET2024)<br />
+2024年3月．<br /></li>
+<li>森 真誠, <span class="underline">深井 貴明</span>, 広渕 崇宏, 朝香 卓也．<br />
+<b>I/Oデバイス内部の汎用プロセッサにおける軽量な隔離実行環境．</b><br />
+第162回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2024年2月．<br /></li>
+<li>石井 玲真(†), <span class="underline">深井 貴明</span>, 品川 高廣．<br />
+<b>ネステッド仮想化のファジングにおけるカバレッジ向上に向けて．</b><br />
+第159回 システムソフトウェアとオペレーティング・システム研究会．<br />
+2023年5月．<br />
+†: <b>Outstanding Presentation Award</b><br /></li>
+<li>葛野 弘樹, <span class="underline">深井 貴明</span> ．<br />
+<b>新規仮想化ソフトウェアのセキュア実装に向けた既存実装の脆弱性分類の検討．</b><br />
+情報処理学会 第85回全国大会講演論文集，<br />
+2023年2月．<br /></li>
 <li>森 真誠(†), <span class="underline">深井 貴明</span>, 山本 啓二, 広渕 崇宏, 朝香 卓也．<br />
 <b>Root権限使用可能なArmスパコン実現に向けた軽量ハイパバイザの設計と実装．</b><br />
 第157回 システムソフトウェアとオペレーティング・システム研究会．<br />
@@ -410,9 +533,44 @@ November 2021.<br /></li>
 </div>
 </li>
 
-<li><a id="org7ad4928"></a>国際ポスタ発表<br />
-<div class="outline-text-3" id="text-org7ad4928">
+<li><a id="org5d61796"></a>国際ポスタ発表<br />
+<div class="outline-text-3" id="text-org5d61796">
 <ol class="org-ol">
+<li>Yoshifumi Shu, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>Coverage-Based Debloating of Linux Kernel Configurations for Real Machine Environments.</b><br />
+The 31st Symposium on Operating Systems Principles (SOSP 2025).<br />
+Oct. 2025.<br /></li>
+
+<li><span class="underline">Takaaki Fukai</span>, Manami Mori, Keiji Yamamoto, Takahiro Hirofuchi, Takuya Asaka.<br />
+<b>Toward Providing Root Privilege to Flagship HPC Users with Thin-Hypervisor.</b><br />
+2024 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops),<br />
+Sep. 2024.<br /></li>
+
+<li>Itsuki Nakai, <span class="underline">Takaaki Fukai</span>, Takahiro Hirofuchi, Yukinori Sato.<br />
+<b>Performance Evaluation of Confidential Containers in the Edge-Cloud Computing Continuum.</b><br />
+15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).<br />
+Sep. 2024.<br /></li>
+
+<li>Taiki Miyakawa, <span class="underline">Takaaki Fukai</span>, Li Yanzhi, Takahiro Hirofuchi, Midori Sugaya.<br />
+<b>Toward Optimizing OS Image Deployment Using SmartNIC.</b><br />
+15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).<br />
+Sep. 2024.<br /></li>
+
+<li>Manami Mori, <span class="underline">Takaaki Fukai</span>, Ryuichi Sakamoto, Takahiro Hirofuchi, Takuya Asaka.<br />
+<b>A lightweight isolated execution environment in SmartNIC.</b><br />
+15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).<br />
+Sep. 2024.<br /></li>
+
+<li>Keisuke Iida, <span class="underline">Takaaki Fukai</span>, Takahiro Hirofuchi, Takeshi Matsuya.<br />
+<b>Design of SR-IOV Driver to Mitigate Performance Degradation for Lightweight Hypervisor.</b><br />
+15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).<br />
+Sep. 2024.<br /></li>
+
+<li>Reima Ishii, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+<b>Toward Efficient Fuzzing of Nested Virtualization.</b><br />
+17th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2023).<br />
+Jul. 2023.<br /></li>
+
 <li><span class="underline">Takaaki Fukai</span> and Kento Sato.<br />
 <b>Measurement of I/O Performance on a Hierarchical File System for Distributed Deep Neural Network.</b><br />
 The 4th R-CCS International symposium<br />
@@ -441,9 +599,37 @@ June, 2014<br /></li>
 </div>
 </li>
 
-<li><a id="orgde5b73f"></a>国内ポスタ発表<br />
-<div class="outline-text-3" id="text-orgde5b73f">
+<li><a id="orgd221a18"></a>国内ポスタ発表<br />
+<div class="outline-text-3" id="text-orgd221a18">
 <ol class="org-ol">
+<li>藤井 大悟, 広渕 崇宏, <span class="underline">深井 貴明</span> ．<br />
+<b>ハードウェアフレームジェネレータを用いたLinuxサーバのレイテンシ分析．</b><br />
+第37回コンピュータシステム・シンポジウム (ComSys 2025).<br />
+2025年12月.<br /></li>
+<li>大野 健太朗, 宮島 敬明, <span class="underline">深井 貴明</span> ．<br />
+<b>異種Armプロセッサにおける軽量ハイパバイザによる性能劣化特性の比較．</b><br />
+xSIG 2024．<br />
+2024年8月．<br /></li>
+<li>広渕 崇宏, Akram Ben Ahmed, <span class="underline">深井 貴明</span>, 加藤 丈治, 高野 了成．<br />
+<b>ポスト5Gを支える時間確定的なコンピューティング基盤技術の開発にむけて．</b><br />
+xSIG 2024．<br />
+2024年8月．<br /></li>
+<li>Akram BEN AHMED, Takahiro HIROFUCHI, <span class="underline">Takaaki FUKAI</span>.<br />
+<b>Towards Open-source FPGA-based hardware support for Time Sensitive Networks.</b><br />
+xSIG 2024．<br />
+2024年8月．<br /></li>
+<li>Akram BEN AHMED, Takahiro HIROFUCHI, <span class="underline">Takaaki FUKAI</span>.<br />
+<b>A work-in-progress report on FPGA-based hardware support of Credit Based Shaping for Time Sensitive Networks.</b><br />
+第248回システム・アーキテクチャ・第205回システムとLSIの設計技術・第65回組込みシステム合同研究発表会（ETNET2024）．<br />
+2024年3月．<br /></li>
+<li>中井 樹, <span class="underline">深井 貴明</span>, 広渕 崇宏, 佐藤 幸紀．<br />
+<b>メモリ暗号化されたクラウドシステム基盤の性能評価．</b><br />
+第248回システム・アーキテクチャ・第205回システムとLSIの設計技術・第65回組込みシステム合同研究発表会（ETNET2024）．<br />
+2024年3月．<br /></li>
+<li>宮川 大輝, <span class="underline">深井 貴明</span>, 李 彦志, 広渕 崇宏, 菅谷みどり．<br />
+<b>I/O処理オフロードに向けたSmartNICとCPUのネットワーク性能特性の比較．</b><br />
+第35回コンピュータシステム・シンポジウム (ComSys 2023).<br />
+2023年12月.<br /></li>
 <li>葛野弘樹， <span class="underline">深井貴明</span>.<br />
 <b>仮想化ソフトウェアのセキュア化に向けた脆弱性の調査分析.</b><br />
 第34回コンピュータシステム・シンポジウム (ComSys 2022).<br />
@@ -467,8 +653,42 @@ June, 2014<br /></li>
 </div>
 </li>
 
-<li><a id="orgf06a0bd"></a>学位論文<br />
-<div class="outline-text-3" id="text-orgf06a0bd">
+<li><a id="org19b4402"></a>招待講演<br />
+<div class="outline-text-3" id="text-org19b4402">
+<ol class="org-ol">
+<li><span class="underline">深井 貴明</span> ．<br />
+クラウド、HPC、エッジにおける軽量ハイパバイザの研究<br />
+第158回システムソフトウェアとオペレーティング・システム研究会 若手招待講演．<br />
+2023年2月<br /></li>
+</ol>
+</div>
+</li>
+
+<li><a id="org6338250"></a>その他国際発表<br />
+<div class="outline-text-3" id="text-org6338250">
+<ol class="org-ol">
+<li>Satoru Takekoshi, Manami Mori, <span class="underline">Takaaki Fukai</span>, Takahiro Shinagawa.<br />
+AML Injection Attacks on Confidential VMs<br />
+BlackHat EU 2024.<br />
+Dec. 2024.<br />
+<a href="https://blackhat.com/eu-24/briefings/schedule/#aml-injection-attacks-on-confidential-vms-42723">https://blackhat.com/eu-24/briefings/schedule/#aml-injection-attacks-on-confidential-vms-42723</a><br /></li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgf81b66a"></a>その他国内発表<br />
+<div class="outline-text-3" id="text-orgf81b66a">
+<ol class="org-ol">
+<li><span class="underline">深井 貴明</span><br />
+トップカンファレンス・ジャーナル採択論文講演<br />
+(採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)<br />
+第31回コンピュータシステム・シンポジウム (ComSys2019）<br /></li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgf2a2722"></a>学位論文<br />
+<div class="outline-text-3" id="text-orgf2a2722">
 <ul class="org-ul">
 <li><span class="underline">深井貴明</span><br />
 <b>ベアメタルクラウドにおける物理マシン管理に関する研究</b><br />
@@ -485,24 +705,16 @@ June, 2014<br /></li>
 </ul>
 </div>
 </li>
-
-<li><a id="org86bcb14"></a>その他国内発表<br />
-<div class="outline-text-3" id="text-org86bcb14">
-<ol class="org-ol">
-<li><span class="underline">深井 貴明</span><br />
-トップカンファレンス・ジャーナル採択論文講演<br />
-(採択論文情報: Takaaki Fukai, Takahiro Shinagawa, Kazuhiko Kato, "Live Migration in Bare-metal Clouds", IEEE Transactions on Cloud Computing, July 2018.)<br />
-第31回コンピュータシステム・シンポジウム (ComSys2019）<br /></li>
-</ol>
-</div>
-</li>
 </ul>
 </div>
 
-<div id="outline-container-org1f25892" class="outline-2">
-<h2 id="org1f25892">受賞歴</h2>
-<div class="outline-text-2" id="text-org1f25892">
+<div id="outline-container-orgc918bdb" class="outline-2">
+<h2 id="orgc918bdb">受賞歴</h2>
+<div class="outline-text-2" id="text-orgc918bdb">
 <ol class="org-ol">
+<li><b>Distinguished Paper Award</b><br />
+ACM SIGSAC Conference on Computer and Communications Security (CCS 2025)<br /></li>
+
 <li><b>IEEE Computer Society Japan Chapter Young Author Award 2019</b><br />
 IEEE Computer Society Tokyo/Japan Joint Chapter, 2019年12月<br /></li>
 
@@ -518,13 +730,13 @@ The 8th IEEE/ACM International Conference on Utility and Cloud Computing, Decemb
 </div>
 </div>
 
-<div id="outline-container-orgeb65ad1" class="outline-2">
-<h2 id="orgeb65ad1">研究資金獲得歴</h2>
-<div class="outline-text-2" id="text-orgeb65ad1">
+<div id="outline-container-orge8b5ba5" class="outline-2">
+<h2 id="orge8b5ba5">研究資金獲得歴</h2>
+<div class="outline-text-2" id="text-orge8b5ba5">
 </div>
 <ul class="org-ul">
-<li><a id="orga8e07d7"></a>研究代表者<br />
-<div class="outline-text-3" id="text-orga8e07d7">
+<li><a id="orgab5766e"></a>研究代表者<br />
+<div class="outline-text-3" id="text-orgab5766e">
 <ul class="org-ul">
 <li>2021年度&#x2013;2024年度 日本学術振興会 科学研究費助成事業(科研費) 若手研究　「共用 HPC における管理者権限の利用を許す計算資源提供」<br /></li>
 </ul>
@@ -532,38 +744,43 @@ The 8th IEEE/ACM International Conference on Utility and Cloud Computing, Decemb
 </li>
 </ul>
 </div>
-<div id="outline-container-orgaa7f244" class="outline-2">
-<h2 id="orgaa7f244">学会活動</h2>
-<div class="outline-text-2" id="text-orgaa7f244">
+<div id="outline-container-orgb81a2b2" class="outline-2">
+<h2 id="orgb81a2b2">学会活動</h2>
+<div class="outline-text-2" id="text-orgb81a2b2">
 </div>
 <ul class="org-ul">
-<li><a id="orga5e079a"></a>編集委員<br />
-<div class="outline-text-3" id="text-orga5e079a">
+<li><a id="org79ac334"></a>編集委員<br />
+<div class="outline-text-3" id="text-org79ac334">
 <ul class="org-ul">
-<li>情報処理学会論文誌：コンピューティングシステム 編集委員 (2020年4月&#x2013;現在)<br /></li>
+<li>情報処理学会論文誌：コンピューティングシステム 編集委員 (2025年4月&#x2013;現在)<br /></li>
+<li>情報処理学会 会誌編集委員会 専門委員会 システム分野 委員 (2022年4月&#x2013;2026年3月)<br /></li>
+<li>情報処理学会論文誌：コンピューティングシステム 編集委員 (2020年4月&#x2013;2024年3月)<br /></li>
 </ul>
 </div>
 </li>
-<li><a id="org508f82e"></a>運営委員<br />
-<div class="outline-text-3" id="text-org508f82e">
+
+<li><a id="orgd67c288"></a>運営委員<br />
+<div class="outline-text-3" id="text-orgd67c288">
 <ul class="org-ul">
-<li>情報処理学会 システムソフトウェアとオペレーティングシステム研究会 委員 (2020年4月&#x2013;現在)<br /></li>
+<li>情報処理学会 システムソフトウェアとオペレーティングシステム研究会 幹事 (2024年4月&#x2013;現在)<br /></li>
+<li>情報処理学会 システムソフトウェアとオペレーティングシステム研究会 委員 (2020年4月&#x2013;2024年3月)<br /></li>
 </ul>
 </div>
 </li>
-<li><a id="org5694b1a"></a>その他<br />
-<div class="outline-text-3" id="text-org5694b1a">
+<li><a id="org491b07b"></a>その他<br />
+<div class="outline-text-3" id="text-org491b07b">
 <ul class="org-ul">
-<li>The 3rd R-CCS International Symposium 2021. Online arrangement chair.<br /></li>
+<li>Sponsor Chair. 15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2024).<br /></li>
+<li>Online arrangement chair. The 3rd R-CCS International Symposium 2021.<br /></li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
 
-<div id="outline-container-orgc0ddd9d" class="outline-2">
-<h2 id="orgc0ddd9d">その他学外活動</h2>
-<div class="outline-text-2" id="text-orgc0ddd9d">
+<div id="outline-container-org3b9852c" class="outline-2">
+<h2 id="org3b9852c">その他学外活動</h2>
+<div class="outline-text-2" id="text-org3b9852c">
 <dl class="org-dl">
 <dt>ResearchGate</dt><dd><a href="https://www.researchgate.net/profile/Takaaki_Fukai">https://www.researchgate.net/profile/Takaaki_Fukai</a><br /></dd>
 <dt>Linkedin</dt><dd><a href="https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp">https://www.linkedin.com/in/takaaki-fukai-b378a7141/?originalSubdomain=jp</a><br /></dd>
@@ -574,11 +791,12 @@ The 8th IEEE/ACM International Conference on Utility and Cloud Computing, Decemb
 </div>
 </div>
 
-<div id="outline-container-orge4fed31" class="outline-2">
-<h2 id="orge4fed31">更新履歴</h2>
-<div class="outline-text-2" id="text-orge4fed31">
+<div id="outline-container-orga72eae0" class="outline-2">
+<h2 id="orga72eae0">更新履歴</h2>
+<div class="outline-text-2" id="text-orga72eae0">
 <ul class="org-ul">
-<li>2022/12/29 <i>所属</i>, <i>業績</i>, <i>職歴</i> の更新<br /></li>
+<li>2026/03/09 <i>所属</i>, <i>業績</i>, <i>学会活動</i>, <i>職歴</i> の更新<br /></li>
+<li>2022/12/29 <i>所属</i>, <i>連絡先</i>, <i>職歴</i>, <i>業績</i> の更新<br /></li>
 <li>2021/09/10 <i>研究資金獲得歴</i>, <i>学会活動</i> を追加, <i>業績</i>, <i>職歴</i> の更新<br /></li>
 <li>2020/04/07 <i>業績</i> の更新<br /></li>
 <li>2020/03/10 <i>職歴</i> の追加, <i>所属</i>, <i>連絡先</i>, <i>業績</i>, <i>受賞歴</i> の更新<br /></li>
@@ -596,8 +814,8 @@ The 8th IEEE/ACM International Conference on Utility and Cloud Computing, Decemb
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: 深井貴明</p>
-<p class="date">Created: 2022-12-29 Thu 17:17</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2026-03-09 Mon 21:05</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
